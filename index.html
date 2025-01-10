@@ -599,7 +599,7 @@
                 </p> -->
                 <div class="how-thumb">
                   <img
-                    src="./assets/images/8838201231644403288.png"
+                    src="./assets/images/maskot.png"
                     alt="about"
                   />
                 </div>
@@ -1376,48 +1376,16 @@
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
-          { pageLanguage: "en", autoDisplay: true }, // Définit la langue de base
+          {
+            pageLanguage: "en", // Langue par défaut
+            includedLanguages: "en,fr,es,ht,pt", // Liste des langues nécessaires
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
           "google_translate_element"
         );
       }
-
-      document
-        .getElementById("languageSelector")
-        .addEventListener("change", function () {
-          const lang = this.value;
-          const googleFrame = document.querySelector(
-            "iframe.goog-te-menu-frame"
-          );
-
-          if (!googleFrame) {
-            alert("Google Translate n'est pas chargé.");
-            return;
-          }
-
-          const innerDoc =
-            googleFrame.contentDocument || googleFrame.contentWindow.document;
-          const langLinks = innerDoc.querySelectorAll("a");
-
-          if (lang === "auto") {
-            const autoDetectLink = Array.from(langLinks).find((link) =>
-              link.textContent.trim().toLowerCase().includes("detect language")
-            );
-            if (autoDetectLink) {
-              autoDetectLink.click();
-            } else {
-              alert("L'auto-détection n'est pas disponible.");
-            }
-            return;
-          }
-
-          for (let link of langLinks) {
-            if (link.getAttribute("lang") === lang) {
-              link.click();
-              break;
-            }
-          }
-        });
     </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

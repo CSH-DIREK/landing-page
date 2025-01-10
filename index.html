@@ -110,19 +110,7 @@
               <a href="Mailto:geniuswallet@gmail.com">geniuswallet@gmail.com</a>
             </li>
             <li>
-              <div class="change-language d-none d-sm-block">
-                <select
-                  class="language-bar"
-                  id="language-selector"
-                  onChange="changeLanguage(this)"
-                >
-                  <option value="en">English</option>
-                  <option value="fr">French</option>
-                  <option value="es">Spanish</option>
-                  <option value="ht">Haitian Creole</option>
-                  <option value="pt">Portuguese</option>
-                </select>
-              </div>
+              <div id="google_translate_element"></div>
             </li>
           </ul>
         </div>
@@ -1385,74 +1373,50 @@
         }
       }
     </script>
-    <script>
-      // Fonction de détection automatique de la langue en fonction du navigateur
-      function autoDetectLanguage() {
-        const userLang = navigator.language || navigator.userLanguage; // Détecte la langue du navigateur
-        const languageSelector = document.getElementById("language-selector");
-
-        // Correspondance des langues
-        const langMap = {
-          en: "English",
-          fr: "French",
-          es: "Spanish",
-          ht: "Haitian Creole",
-          pt: "Portuguese",
-        };
-
-        const detectedLang = userLang.split("-")[0]; // Extrait le code langue (par exemple "fr" de "fr-FR")
-
-        if (langMap[detectedLang]) {
-          // Si la langue détectée est dans notre liste, on la sélectionne
-          languageSelector.value = detectedLang;
-          changeLanguage(languageSelector); // Change la langue immédiatement
-        }
-      }
-
-      // Fonction pour changer la langue
-      function changeLanguage(selectElement) {
-        const lang = selectElement.value;
-
-        // Vérifie si Google Translate est chargé et prêt
-        const googleFrame = document.querySelector("iframe.goog-te-menu-frame");
-        if (!googleFrame) {
-          alert("Google Translate n'est pas encore chargé.");
-          return;
-        }
-
-        // Attendez que l'iframe de Google Translate soit prête
-        const checkIframeReady = setInterval(function () {
-          const innerDoc =
-            googleFrame.contentDocument || googleFrame.contentWindow.document;
-          if (innerDoc) {
-            clearInterval(checkIframeReady); // Arrête la vérification une fois l'iframe prête
-            const langLinks = innerDoc.querySelectorAll("a");
-
-            // Cherche et clique sur le lien de la langue choisie
-            for (let link of langLinks) {
-              if (link.textContent.trim().toLowerCase() === lang) {
-                link.click();
-                break;
-              }
-            }
-          }
-        }, 100); // Vérifie toutes les 100 ms si l'iframe est prête
-      }
-
-      // Appeler la fonction de détection automatique lors du chargement de la page
-      window.onload = function () {
-        autoDetectLanguage();
-      };
-    </script>
-
-    <!-- Script pour initialiser Google Translate -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
-          { pageLanguage: "en" },
+          { pageLanguage: "en", autoDisplay: true }, // Définit la langue de base
           "google_translate_element"
         );
       }
+
+      document
+        .getElementById("languageSelector")
+        .addEventListener("change", function () {
+          const lang = this.value;
+          const googleFrame = document.querySelector(
+            "iframe.goog-te-menu-frame"
+          );
+
+          if (!googleFrame) {
+            alert("Google Translate n'est pas chargé.");
+            return;
+          }
+
+          const innerDoc =
+            googleFrame.contentDocument || googleFrame.contentWindow.document;
+          const langLinks = innerDoc.querySelectorAll("a");
+
+          if (lang === "auto") {
+            const autoDetectLink = Array.from(langLinks).find((link) =>
+              link.textContent.trim().toLowerCase().includes("detect language")
+            );
+            if (autoDetectLink) {
+              autoDetectLink.click();
+            } else {
+              alert("L'auto-détection n'est pas disponible.");
+            }
+            return;
+          }
+
+          for (let link of langLinks) {
+            if (link.getAttribute("lang") === lang) {
+              link.click();
+              break;
+            }
+          }
+        });
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>

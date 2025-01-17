@@ -9,11 +9,11 @@
       name="description"
       content="CSH DIREK A financial solution in every Haitian's pocket."
     />
-    <meta name="keywords" content="wallet,wallet cms,Genius,CshDirek" />
+    <meta name="keywords" content="wallet,wallet cms,CshDirek" />
 
     <link
       rel="apple-touch-icon"
-      href="https://product.geniusocean.com/genius-wallet/assets/images/1558572841646281442.png"
+      href="./assets/images/8838201231644403288.png"
     />
 
     <meta itemprop="name" content="Home" />
@@ -21,10 +21,7 @@
       itemprop="description"
       content="CSH DIREK A financial solution in every Haitian's pocket."
     />
-    <meta
-      itemprop="image"
-      content="https://product.geniusocean.com/genius-wallet/assets/images/15339411471646279600.png"
-    />
+    <meta itemprop="image" content="./assets/images/8838201231644403288.png" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="CSH DIREK" />
@@ -34,14 +31,11 @@
     />
     <meta
       property="og:image"
-      content="https://product.geniusocean.com/genius-wallet/assets/images/15339411471646279600.png"
+      content="./assets/images/8838201231644403288.png"
     />
     <meta property="og:image:type" content="image/png" />
 
-    <meta
-      property="og:url"
-      content="https://product.geniusocean.com/genius-wallet"
-    />
+    <meta property="og:url" content="https://cshdirek.com" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <title>CshDirek S.A - Home</title>
@@ -55,10 +49,7 @@
     <link rel="stylesheet" href="./assets/frontend/css/default.min.css" />
     <link href="./assets/frontend/css/main.css" rel="stylesheet" />
 
-    <link
-      rel="shortcut icon"
-      href="https://product.geniusocean.com/genius-wallet/assets/images/5480339181644482400.png"
-    />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
   </head>
   <body>
     <div class="overlayer"></div>
@@ -104,13 +95,19 @@
           </ul>
           <ul class="contact-bar py-1 py-md-0">
             <li>
-              <a href="Tel:+1 (631) 593-5927">+509 4415-8695</a>
+              <a href="Tel:+509 4415-8695">+509 4415-8695</a>
             </li>
             <li>
-              <a href="Mailto:geniuswallet@gmail.com">geniuswallet@gmail.com</a>
+              <a href="Mailto:support@cshdirek.com">support@cshdirek.com</a>
             </li>
             <li>
-              <div id="google_translate_element"></div>
+              <div class="change-language d-none d-sm-block">
+                <select class="language-bar" id="languageSelector">
+                  <option value="en" selected>English</option>
+                  <option value="fr">Français</option>
+                  <option value="ht">Kreyòl Ayisyen</option>
+                </select>
+              </div>
             </li>
           </ul>
         </div>
@@ -125,14 +122,10 @@
             </a>
           </div>
           <div class="change-language d-sm-none ms-auto me-3 text--title">
-            <select
-              class="language-bar"
-              onChange="window.location.href=this.value"
-            >
-              <option value="#en" selected>English</option>
-              <option value="#hn">Hindi</option>
-              <option value="#bn">Bengali</option>
-              <option value="#es">Spanish</option>
+            <select class="language-bar" id="languageSelector">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="ht">Kreyòl Ayisyen</option>
             </select>
           </div>
           <div class="nav-toggle d-lg-none">
@@ -146,25 +139,38 @@
             </div>
             <ul class="nav-menu">
               <li>
-                <a target="" href="/">Home</a>
+                <a target="" href="/" data-translate="home">Home</a>
               </li>
               <li>
-                <a target="" href="/about.html">About</a>
+                <a target="" href="/about.html" data-translate="about">About</a>
               </li>
               <li>
-                <a target="" href="/services.html">Services</a>
+                <a target="" href="/services.html" data-translate="services"
+                  >Services</a
+                >
               </li>
               <li>
-                <a target="" href="/join_us.html">Join Us</a>
+                <a target="" href="/join_us.html" data-translate="join_us"
+                  >Join Us</a
+                >
               </li>
               <li>
-                <a target="" href="/contact.html">Contact</a>
+                <a target="" href="/contact.html" data-translate="contact"
+                  >Contact</a
+                >
               </li>
 
               <li>
                 <div class="btn__grp ms-lg-3">
-                  <a href="#login" class="cmn--btn">Login</a>
-                  <a href="#register" class="cmn--btn btn-outline">Register</a>
+                  <a href="#login" class="cmn--btn" data-translate="login"
+                    >Login</a
+                  >
+                  <a
+                    href="#register"
+                    class="cmn--btn btn-outline"
+                    data-translate="register"
+                    >Register</a
+                  >
                 </div>
               </li>
             </ul>
@@ -539,7 +545,7 @@
                 <div class="counter-item">
                   <div class="counter-content">
                     <img
-                      src="./assets/images/jounal3.png"
+                      src="./assets/images/check.png"
                       style="width: 150px; height: 100px"
                     />
                   </div>
@@ -549,7 +555,7 @@
                 <div class="counter-item">
                   <div class="counter-content">
                     <img
-                      src="./assets/images/jounal3.png"
+                      src="./assets/images/garanti.png"
                       style="width: 150px; height: 100px"
                     />
                   </div>
@@ -598,10 +604,7 @@
                   accessible to all.
                 </p> -->
                 <div class="how-thumb">
-                  <img
-                    src="./assets/images/maskot.png"
-                    alt="about"
-                  />
+                  <img src="./assets/images/maskot.png" alt="about" />
                 </div>
               </div>
             </div>
@@ -1060,7 +1063,7 @@
               <h5 class="name text--base mt-3">Carier Alexis</h5>
             </div>
           </div>
-          <div class="testimonial-item">
+          <!-- <div class="testimonial-item">
             <div class="testimonial-header">
               <div class="thumb">
                 <img src="./assets/images/testi4.png" />
@@ -1083,7 +1086,7 @@
               </p>
               <h5 class="name text--base mt-3">Ipson François</h5>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <span class="banner-elem elem2">&nbsp;</span>
@@ -1279,16 +1282,12 @@
               <h5 class="footer-title">Pages</h5>
               <ul>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/frequently-asked-questions"
+                  <a href="./frequently-asked-questions"
                     >Frequently Asked Questions</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/pages/14-announcement"
-                    >Announcement</a
-                  >
+                  <a href="./pages/14-announcement">Announcement</a>
                 </li>
               </ul>
             </div>
@@ -1347,45 +1346,45 @@
     <script src="./assets/admin/js/sweetalert2@9.js"></script>
 
     <script>
-      function toast(type, msg) {
-        const Toast = Swal.mixin({
-          toast: true,
-          position: "top-end",
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-          onOpen: (toast) => {
-            toast.addEventListener("mouseenter", Swal.stopTimer);
-            toast.addEventListener("mouseleave", Swal.resumeTimer);
-          },
-        });
-        Toast.fire({
-          icon: type,
-          title: msg,
-        });
-      }
+      const translations = {
+        en: "./assets/lang/en.json",
+        fr: "./assets/lang/fr.json",
+        ht: "./assets/lang/ht.json",
+      };
 
-      function amount(amount, type) {
-        if (type == 2) {
-          return amount.toFixed(8);
-        } else {
-          return amount.toFixed();
+      // Fonction pour charger et appliquer les traductions
+      async function loadTranslations(lang) {
+        try {
+          const response = await fetch(translations[lang]);
+          if (!response.ok) {
+            throw new Error(
+              `Erreur lors du chargement du fichier de langue: ${lang}`
+            );
+          }
+          const data = await response.json();
+
+          // Mise à jour du contenu de la page
+          document.querySelectorAll("[data-translate]").forEach((element) => {
+            const key = element.getAttribute("data-translate");
+            if (data[key]) {
+              element.textContent = data[key];
+            }
+          });
+        } catch (error) {
+          console.error(error.message);
         }
       }
+
+      // Gestion du changement de langue
+      document
+        .getElementById("languageSelector")
+        .addEventListener("change", (event) => {
+          const selectedLang = event.target.value;
+          loadTranslations(selectedLang);
+        });
+
+      // Charger la langue par défaut (anglais)
+      loadTranslations("en");
     </script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en", // Langue par défaut
-            includedLanguages: "en,fr,es,ht,pt", // Liste des langues nécessaires
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element"
-        );
-      }
-    </script>
-    
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

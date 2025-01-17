@@ -1,0 +1,19 @@
+{
+  "home": "Home",
+  "about": "About",
+  "services": "Services",
+  "contact": "Contact",
+  "join_us": "Join Us",
+  "login": "Login",
+  "register": "Register",
+  "get_in_touch": "Get In Touch",
+  "your_name": "Your Name",
+  "your_email": "Your Email Address",
+  "subject": "Subject",
+  "your_message": "Your Message",
+  "send_message": "Send Message",
+  "footer_menu": "Menu",
+  "footer_pages": "Pages",
+  "footer_register": "Register as User",
+  "footer_login": "Login as User"
+}

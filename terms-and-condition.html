@@ -60,6 +60,7 @@
 
     <link rel="shortcut icon" href="./assets/images/5480339181644482400.png" />
   </head>
+
   <body>
     <div class="overlayer"></div>
 
@@ -71,65 +72,50 @@
         >
           <ul class="social-icons py-1 py-md-0">
             <li>
-              <a target="_blank" href="https://facebook.com"
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61569848916196&mibextid=ZbWKwL"
                 ><i class="fab fa-facebook-f"></i
               ></a>
             </li>
             <li>
-              <a target="_blank" href="https://twiiter.com"
+              <a target="_blank" href="https://x.com/cshdirek?s=11"
                 ><i class="fab fa-twitter"></i
               ></a>
             </li>
             <li>
-              <a target="_blank" href="https://instagram.com"
+              <a
+                target="_blank"
+                href="https://www.instagram.com/cshdirek/profilecard/?igsh=MW1iZzVocmc4eW0zeQ=="
                 ><i class="fab fa-instagram"></i
               ></a>
             </li>
             <li>
-              <a target="_blank" href="https://linkedin.com"
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/csh-direk-sa-6b6125342"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </li>
             <li>
-              <a target="_blank" href="https://youtube.com"
+              <a target="_blank" href="https://www.youtube.com/@CSHDIREKSA"
                 ><i class="fab fa-youtube"></i
               ></a>
             </li>
           </ul>
           <ul class="contact-bar py-1 py-md-0">
             <li>
-              <a href="Tel:+1 (631) 593-5927">+1 (631) 593-5927</a>
+              <a href="Tel:+509 4415-8695">+509 4415-8695</a>
             </li>
             <li>
-              <a href="Mailto:geniuswallet@gmail.com">geniuswallet@gmail.com</a>
+              <a href="Mailto:support@cshdirek.com">support@cshdirek.com</a>
             </li>
             <li>
               <div class="change-language d-none d-sm-block">
-                <select
-                  class="language-bar"
-                  onChange="window.location.href=this.value"
-                >
-                  <option
-                    value="https://product.geniusocean.com/genius-wallet/change-language/en"
-                    selected
-                  >
-                    English
-                  </option>
-                  <option
-                    value="https://product.geniusocean.com/genius-wallet/change-language/hn"
-                  >
-                    Hindi
-                  </option>
-                  <option
-                    value="https://product.geniusocean.com/genius-wallet/change-language/bn"
-                  >
-                    Bengali
-                  </option>
-                  <option
-                    value="https://product.geniusocean.com/genius-wallet/change-language/es"
-                  >
-                    Spanish
-                  </option>
+                <select class="language-bar" id="languageSelector">
+                  <option value="en" selected>English</option>
+                  <option value="fr">Français</option>
+                  <option value="ht">Kreyòl Ayisyen</option>
                 </select>
               </div>
             </li>
@@ -146,14 +132,10 @@
             </a>
           </div>
           <div class="change-language d-sm-none ms-auto me-3 text--title">
-            <select
-              class="language-bar"
-              onChange="window.location.href=this.value"
-            >
-              <option value="#en" selected>English</option>
-              <option value="#hn">Hindi</option>
-              <option value="#bn">Bengali</option>
-              <option value="#es">Spanish</option>
+            <select class="language-bar" id="languageSelector">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="ht">Kreyòl Ayisyen</option>
             </select>
           </div>
           <div class="nav-toggle d-lg-none">
@@ -167,25 +149,36 @@
             </div>
             <ul class="nav-menu">
               <li>
-                <a target="" href="/">Home</a>
+                <a target="" href="/" data-translate="home">Home</a>
               </li>
               <li>
-                <a target="" href="/about.html">About</a>
+                <a target="" href="/about.html" data-translate="about">About</a>
               </li>
               <li>
-                <a target="" href="/services.html">Services</a>
+                <a target="" href="/#services" data-translate="services"
+                  >Services</a
+                >
               </li>
+              <!-- <li>
+            <a target="" href="/contact.html" data-translate="join_us">Join Us</a>
+          </li> -->
               <li>
-                <a target="" href="/join_us.html">Join Us</a>
-              </li>
-              <li>
-                <a target="" href="/contact.html">Contact</a>
+                <a target="" href="/contact.html" data-translate="contact"
+                  >Contact</a
+                >
               </li>
 
               <li>
                 <div class="btn__grp ms-lg-3">
-                  <a href="#login" class="cmn--btn">Login</a>
-                  <a href="#register" class="cmn--btn btn-outline">Register</a>
+                  <a href="#login" class="cmn--btn" data-translate="login"
+                    >Login</a
+                  >
+                  <a
+                    href="#register"
+                    class="cmn--btn btn-outline"
+                    data-translate="register"
+                    >Register</a
+                  >
                 </div>
               </li>
             </ul>
@@ -201,7 +194,7 @@
           <h2 class="hero-title">Terms and Condition</h2>
           <ul class="breadcrumb">
             <li>
-              <a href="https://product.geniusocean.com/genius-wallet">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>Terms and Condition</li>
           </ul>
@@ -459,39 +452,13 @@
               <h5 class="footer-title">Menu</h5>
               <ul>
                 <li>
-                  <a
-                    target=""
-                    href="https://product.geniusocean.com/genius-wallet"
-                    >Home</a
-                  >
+                  <a target="" href="/">Home</a>
                 </li>
                 <li>
-                  <a
-                    target=""
-                    href="https://product.geniusocean.com/genius-wallet/about"
-                    >About</a
-                  >
+                  <a target="" href="about.html">About</a>
                 </li>
                 <li>
-                  <a
-                    target=""
-                    href="https://product.geniusocean.com/genius-wallet/api-documentation"
-                    >API</a
-                  >
-                </li>
-                <li>
-                  <a
-                    target=""
-                    href="https://product.geniusocean.com/genius-wallet/blogs"
-                    >Blogs</a
-                  >
-                </li>
-                <li>
-                  <a
-                    target=""
-                    href="https://product.geniusocean.com/genius-wallet/contact"
-                    >Contact</a
-                  >
+                  <a target="" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -499,28 +466,16 @@
               <h5 class="footer-title">Get Started</h5>
               <ul>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/user/register"
-                    >Register as User</a
-                  >
+                  <a href="#register">Register as User</a>
                 </li>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/user/login"
-                    >Login as User</a
-                  >
+                  <a href="#login">Login as User</a>
                 </li>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/merchant/register"
-                    >Register as Merchant</a
-                  >
+                  <a href="#register">Register as Merchant</a>
                 </li>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/merchant/login"
-                    >Login as Merchant</a
-                  >
+                  <a href="#login">Login as Merchant</a>
                 </li>
               </ul>
             </div>
@@ -529,16 +484,12 @@
               <h5 class="footer-title">Pages</h5>
               <ul>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/frequently-asked-questions"
+                  <a href="./frequently-asked-questions.html"
                     >Frequently Asked Questions</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="https://product.geniusocean.com/genius-wallet/pages/14-announcement"
-                    >Announcement</a
-                  >
+                  <a href="./announcement.html">Announcement</a>
                 </li>
               </ul>
             </div>
@@ -551,41 +502,35 @@
             class="d-flex flex-wrap justify-content-center justify-content-sm-between bottom-menu-wrapper"
           >
             <div class="footer-logo">
-              <a href="https://product.geniusocean.com/genius-wallet">
-                <img src="./assets/images/1558572841646281442.png" alt="logo" />
+              <a href="#">
+                <img src="./assets/images/logo.png" alt="logo" />
               </a>
             </div>
             <div class="copyright">
               &copy; All Right Reserved by
-              <a
-                href="https://product.geniusocean.com/genius-wallet"
-                class="text--base"
-                >Genius Admin</a
-              >
+              <a href="#" class="text--base">CshDirek S.A</a>
             </div>
             <ul class="bottom-menu">
               <li>
-                <a
-                  href="https://product.geniusocean.com/genius-wallet/terms-and-policies/0-privacy"
-                  >Privacy</a
-                >
+                <a href="./privacy.docx">Privacy</a>
               </li>
               <li>
-                <a
-                  href="https://product.geniusocean.com/genius-wallet/terms-and-policies/1-terms-and-condition"
-                  >Terms and Condition</a
-                >
+                <a href="./privacy.docx">Terms and Condition</a>
               </li>
               <li>
-                <a
-                  href="https://product.geniusocean.com/genius-wallet/terms-and-policies/2-refund-policy"
-                  >Refund Policy</a
-                >
+                <a href="./legal_moniteur.pdf">Legal Moniteur</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <a
+        href="https://wa.me/+50937759803"
+        target="_blank"
+        class="whatsapp-float"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
       <span class="banner-elem elem3">&nbsp;</span>
       <span class="banner-elem elem5">&nbsp;</span>
       <span class="banner-elem elem6">&nbsp;</span>

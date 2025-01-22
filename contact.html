@@ -51,6 +51,7 @@
 
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
   </head>
+
   <body>
     <div class="overlayer"></div>
 
@@ -145,15 +146,13 @@
                 <a target="" href="/about.html" data-translate="about">About</a>
               </li>
               <li>
-                <a target="" href="/services.html" data-translate="services"
+                <a target="" href="/#services" data-translate="services"
                   >Services</a
                 >
               </li>
-              <li>
-                <a target="" href="/join_us.html" data-translate="join_us"
-                  >Join Us</a
-                >
-              </li>
+              <!-- <li>
+            <a target="" href="/contact.html" data-translate="join_us">Join Us</a>
+          </li> -->
               <li>
                 <a target="" href="/contact.html" data-translate="contact"
                   >Contact</a
@@ -202,13 +201,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 pe-xl-5">
-            <form class="contact-form row g-4" action="" method="POST">
-              <input
-                type="hidden"
-                name="_token"
-                value="sPavC5eimEAfEso7EYeRWMSBVPqD5J6QHWwdZ1EE"
-              />
-              <div class="col-sm-6 form-group">
+            <form id="contactForm" class="contact-form row g-4" method="POST">
+              <div class="col-sm-12 form-group">
                 <label class="form--label" for="name">Your Name</label>
                 <input
                   type="text"
@@ -217,7 +211,6 @@
                   id="name"
                   placeholder="Your Name"
                   required
-                  value=""
                 />
               </div>
               <div class="col-sm-6 form-group">
@@ -225,13 +218,25 @@
                   >Your Email Address</label
                 >
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   class="form-control form--control bg--section"
                   id="email"
                   placeholder="Your Email Address"
                   required
-                  value=""
+                />
+              </div>
+              <div class="col-sm-6 form-group">
+                <label class="form--label" for="phone">Phone</label>
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control form--control bg--section"
+                  id="phone"
+                  placeholder="Your Phone"
+                  required
+                  pattern="^\+?[0-9]{10,15}$"
+                  title="Enter a valid phone number"
                 />
               </div>
               <div class="col-sm-12 form-group">
@@ -243,7 +248,6 @@
                   id="subject"
                   placeholder="Subject"
                   required
-                  value=""
                 />
               </div>
               <div class="col-sm-12 form-group">
@@ -258,13 +262,7 @@
               </div>
 
               <div class="col-xl-12 form-group">
-                <button
-                  type="submit"
-                  class="cmn--btn"
-                  data-translate="send_message"
-                >
-                  Send Message
-                </button>
+                <button type="submit" class="cmn--btn">Send Message</button>
               </div>
             </form>
           </div>
@@ -310,6 +308,60 @@
           </div>
         </div>
       </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="successModal"
+        tabindex="-1"
+        aria-labelledby="successModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal-content rounded-3 shadow-lg"
+            style="background-color: #f8f9fa"
+          >
+            <div class="modal-header border-0">
+              <h5
+                class="modal-title"
+                id="successModalLabel"
+                style="color: #28a745; font-weight: bold"
+              >
+                Success
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                style="color: #28a745"
+              ></button>
+            </div>
+            <div
+              class="modal-body text-center"
+              style="color: #495057; font-size: 1.1rem; padding: 20px"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center mb-3"
+                style="font-size: 50px; color: #28a745"
+              >
+                <i class="bi bi-check-circle"></i>
+              </div>
+              <p>Your message has been sent successfully!</p>
+            </div>
+            <div class="modal-footer border-0">
+              <button
+                type="button"
+                class="btn btn-success px-4 py-2"
+                data-bs-dismiss="modal"
+                style="border-radius: 20px; font-size: 1.1rem"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -321,19 +373,13 @@
               <h5 class="footer-title">Menu</h5>
               <ul>
                 <li>
-                  <a target="" href="#">Home</a>
+                  <a target="" href="/">Home</a>
                 </li>
                 <li>
-                  <a target="" href="#about">About</a>
+                  <a target="" href="about.html">About</a>
                 </li>
                 <li>
-                  <a target="" href="#api-documentation">API</a>
-                </li>
-                <li>
-                  <a target="" href="#blogs">Blogs</a>
-                </li>
-                <li>
-                  <a target="" href="#contact">Contact</a>
+                  <a target="" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -359,12 +405,12 @@
               <h5 class="footer-title">Pages</h5>
               <ul>
                 <li>
-                  <a href="./frequently-asked-questions"
+                  <a href="./frequently-asked-questions.html"
                     >Frequently Asked Questions</a
                   >
                 </li>
                 <li>
-                  <a href="./pages/14-announcement">Announcement</a>
+                  <a href="./announcement.html">Announcement</a>
                 </li>
               </ul>
             </div>
@@ -399,6 +445,13 @@
           </div>
         </div>
       </div>
+      <a
+        href="https://wa.me/+50937759803"
+        target="_blank"
+        class="whatsapp-float"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
       <span class="banner-elem elem3">&nbsp;</span>
       <span class="banner-elem elem5">&nbsp;</span>
       <span class="banner-elem elem6">&nbsp;</span>
@@ -483,6 +536,40 @@
 
       // Charger la langue par défaut (anglais)
       loadTranslations("en");
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("CTuEgw7Adje2lMTaQ"); // Remplacez par votre clé publique EmailJS
+
+      const contactForm = document.getElementById("contactForm");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Collecte des données du formulaire
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData.entries());
+
+        emailjs.send("service_o5akswq", "template_oe0wmz8", data).then(
+          function (response) {
+            console.log("Success!", response.status, response.text);
+            // Réinitialiser le formulaire
+            contactForm.reset();
+            // Afficher le modal de succès
+            const successModal = new bootstrap.Modal(
+              document.getElementById("successModal")
+            );
+            successModal.show();
+          },
+          function (error) {
+            console.error("Failed...", error);
+            alert(
+              "An error occurred while sending the message. Please try again."
+            );
+          }
+        );
+      });
     </script>
   </body>
 </html>

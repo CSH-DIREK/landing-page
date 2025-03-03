@@ -182,12 +182,12 @@
     <section class="hero-section">
       <div class="container">
         <div class="hero-content">
-          <h2 class="hero-title">Contact Us</h2>
+          <h2 class="hero-title" data-translate="contact_h2">Contact Us</h2>
           <ul class="breadcrumb">
-            <li>
+            <li data-translate="home">
               <a href="/">Home</a>
             </li>
-            <li>Contact Us</li>
+            <li data-translate="contact_h2">Contact Us</li>
           </ul>
         </div>
       </div>
@@ -203,18 +203,19 @@
           <div class="col-lg-6 pe-xl-5">
             <form id="contactForm" class="contact-form row g-4" method="POST">
               <div class="col-sm-12 form-group">
-                <label class="form--label" for="name">Your Name</label>
+                <label class="form--label" for="name" data-translate="contact_name">Your Name</label>
                 <input
                   type="text"
                   name="name"
                   class="form-control form--control bg--section"
                   id="name"
+                  data-translate="contact_name_name"
                   placeholder="Your Name"
                   required
                 />
               </div>
               <div class="col-sm-6 form-group">
-                <label class="form--label" for="email"
+                <label class="form--label" for="email" data-translate="contact_email"
                   >Your Email Address</label
                 >
                 <input
@@ -224,52 +225,56 @@
                   id="email"
                   placeholder="Your Email Address"
                   required
+                  data-translate="contact_email_email"
                 />
               </div>
               <div class="col-sm-6 form-group">
-                <label class="form--label" for="phone">Phone</label>
+                <label class="form--label" for="phone" data-translate="contact_phone">Phone</label>
                 <input
                   type="text"
                   name="phone"
                   class="form-control form--control bg--section"
                   id="phone"
                   placeholder="Your Phone"
+                  data-translate="contact_phone"
                   required
                   pattern="^\+?[0-9]{10,15}$"
                   title="Enter a valid phone number"
                 />
               </div>
               <div class="col-sm-12 form-group">
-                <label class="form--label" for="subject">Subject</label>
+                <label class="form--label" for="subject" data-translate="contact_subject">Subject</label>
                 <input
                   type="text"
                   name="subject"
                   class="form-control form--control bg--section"
                   id="subject"
                   placeholder="Subject"
+                  data-translate="contact_subject"
                   required
                 />
               </div>
               <div class="col-sm-12 form-group">
-                <label class="form--label" for="message">Your Message</label>
+                <label class="form--label" for="message" data-translate="contact_message">Your Message</label>
                 <textarea
                   id="message"
                   name="message"
                   class="form-control form--control bg--section"
+                  data-translate="contact_message"
                   placeholder="Your Message"
                   required
                 ></textarea>
               </div>
 
               <div class="col-xl-12 form-group">
-                <button type="submit" class="cmn--btn">Send Message</button>
+                <button type="submit" class="cmn--btn" data-translate="contact_send">Send Message</button>
               </div>
             </form>
           </div>
           <div class="col-lg-6">
             <div class="section-title mb-4 pb-3">
-              <h6 class="subtitle text--base">Contact Us</h6>
-              <h2 class="title">Get In Touch</h2>
+              <h6 class="subtitle text--base" data-translate="contact_h2">Contact Us</h6>
+              <h2 class="title" data-translate="contact_h2">Get In Touch</h2>
               <!-- <p>
                        Porro illum impedit nemo hic, similique at, qui ducimus praesentium ullam voluptatem culpa temporibus eveniet, esse accusamus                    </p> -->
             </div>
@@ -279,7 +284,7 @@
                   <i class="fas fa-phone-alt"></i>
                 </div>
                 <div class="contact__item-cont">
-                  <h5 class="contact__item-title">Phone</h5>
+                  <h5 class="contact__item-title" data-translate="contact_phone">Phone</h5>
                   <a href="Tel:+509 4415-8695">+509 4415-8695</a>
                 </div>
               </div>
@@ -288,7 +293,7 @@
                   <i class="far fa-envelope"></i>
                 </div>
                 <div class="contact__item-cont">
-                  <h5 class="contact__item-title">Email</h5>
+                  <h5 class="contact__item-title"data-translate ="contact_mail">Email</h5>
                   <a href="Mailto:info@cshdirek.com">info@cshdirek.com</a>
                 </div>
               </div>
@@ -297,7 +302,7 @@
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="contact__item-cont">
-                  <h5 class="contact__item-title">Address</h5>
+                  <h5 class="contact__item-title" data-translate="contact_adress">Address</h5>
                   <span class="text--base"
                     >5440 North State Road 7 #222, Fort Lauderdale, Florida,
                     United States 33319.</span
@@ -364,100 +369,100 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="position-relative overflow-hidden">
-      <div class="footer-top bg--section">
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="footer-widget">
-              <h5 class="footer-title">Menu</h5>
-              <ul>
-                <li>
-                  <a target="" href="/">Home</a>
-                </li>
-                <li>
-                  <a target="" href="about.html">About</a>
-                </li>
-                <li>
-                  <a target="" href="contact.html">Contact</a>
-                </li>
-              </ul>
+      <!-- Footer -->
+      <footer class="position-relative overflow-hidden">
+        <div class="footer-top bg--section">
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="footer-widget">
+                <h5 class="footer-title" data-translate="menu">Menu</h5>
+                <ul>
+                  <li  data-translate="home">
+                    <a target="" href="/">Home</a>
+                  </li>
+                  <li  data-translate="about">
+                    <a target="" href="about.html">About</a>
+                  </li>
+                  <li data-translate="contact">
+                    <a target="" href="contact.html" >Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-widget">
+                <h5 class="footer-title" data-translate="register_home">Get Started</h5>
+                <ul>
+                  <li>
+                    <a href="#register" data-translate="utilisateur">Register as User</a>
+                  </li>
+                  <li>
+                    <a href="#login" data-translate="log">Login as User</a>
+                  </li>
+                  <li>
+                    <a href="#register" data-translate="marchant">Register as Merchant</a>
+                  </li>
+                  <li>
+                    <a href="#login" data-translate="log_M">Login as Merchant</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="footer-widget">
+                <h5 class="footer-title" data-translate="pages">Pages</h5>
+                <ul>
+                  <li>
+                    <a href="./frequently-asked-questions.html" data-translate="fqs"
+                      >Frequently Asked Questions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./announcement.html" data-translate="annonce">Announcement</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="footer-widget">
-              <h5 class="footer-title">Get Started</h5>
-              <ul>
+          </div>
+        </div>
+        <div class="footer-bottom bg--body py-4">
+          <div class="container">
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-sm-between bottom-menu-wrapper"
+            >
+              <div class="footer-logo">
+                <a href="#">
+                  <img src="./assets/images/logo.png" alt="logo" />
+                </a>
+              </div>
+              <div class="copyright"data-translate="reserved">
+                &copy; All Right Reserved by
+                <a href="#" class="text--base" >CshDirek S.A</a>
+              </div>
+              <ul class="bottom-menu">
                 <li>
-                  <a href="#register">Register as User</a>
+                  <a href="./privacy.docx" data-translate="privacy">Privacy</a>
                 </li>
                 <li>
-                  <a href="#login">Login as User</a>
+                  <a href="./privacy.docx" data-translate="term">Terms and Condition</a>
                 </li>
                 <li>
-                  <a href="#register">Register as Merchant</a>
-                </li>
-                <li>
-                  <a href="#login">Login as Merchant</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer-widget">
-              <h5 class="footer-title">Pages</h5>
-              <ul>
-                <li>
-                  <a href="./frequently-asked-questions.html"
-                    >Frequently Asked Questions</a
-                  >
-                </li>
-                <li>
-                  <a href="./announcement.html">Announcement</a>
+                  <a href="./legal_moniteur.pdf" data-translate="moniteur">Legal Moniteur</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom bg--body py-4">
-        <div class="container">
-          <div
-            class="d-flex flex-wrap justify-content-center justify-content-sm-between bottom-menu-wrapper"
-          >
-            <div class="footer-logo">
-              <a href="#">
-                <img src="./assets/images/logo.png" alt="logo" />
-              </a>
-            </div>
-            <div class="copyright">
-              &copy; All Right Reserved by
-              <a href="#" class="text--base">CshDirek S.A</a>
-            </div>
-            <ul class="bottom-menu">
-              <li>
-                <a href="./privacy.docx">Privacy</a>
-              </li>
-              <li>
-                <a href="./privacy.docx">Terms and Condition</a>
-              </li>
-              <li>
-                <a href="./legal_moniteur.pdf">Legal Moniteur</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <a
-        href="https://wa.me/+50937759803"
-        target="_blank"
-        class="whatsapp-float"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <span class="banner-elem elem3">&nbsp;</span>
-      <span class="banner-elem elem5">&nbsp;</span>
-      <span class="banner-elem elem6">&nbsp;</span>
-      <span class="banner-elem elem8">&nbsp;</span>
-    </footer>
-    <!-- Footer -->
+        <a
+          href="https://wa.me/+50937759803"
+          target="_blank"
+          class="whatsapp-float"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <span class="banner-elem elem3">&nbsp;</span>
+        <span class="banner-elem elem5">&nbsp;</span>
+        <span class="banner-elem elem6">&nbsp;</span>
+        <span class="banner-elem elem8">&nbsp;</span>
+      </footer>
+      <!-- Footer -->
 
     <script src="./assets/frontend/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/frontend/js/bootstrap.min.js"></script>
@@ -502,7 +507,7 @@
         fr: "./assets/lang/fr.json",
         ht: "./assets/lang/ht.json",
       };
-
+    
       // Fonction pour charger et appliquer les traductions
       async function loadTranslations(lang) {
         try {
@@ -513,19 +518,23 @@
             );
           }
           const data = await response.json();
-
+    
           // Mise à jour du contenu de la page
           document.querySelectorAll("[data-translate]").forEach((element) => {
             const key = element.getAttribute("data-translate");
             if (data[key]) {
-              element.textContent = data[key];
+              if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+                element.placeholder = data[key]; // Met à jour le placeholder
+              } else {
+                element.textContent = data[key]; // Met à jour le texte normal
+              }
             }
           });
         } catch (error) {
           console.error(error.message);
         }
       }
-
+    
       // Gestion du changement de langue
       document
         .getElementById("languageSelector")
@@ -533,10 +542,11 @@
           const selectedLang = event.target.value;
           loadTranslations(selectedLang);
         });
-
+    
       // Charger la langue par défaut (anglais)
       loadTranslations("en");
     </script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>

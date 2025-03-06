@@ -103,7 +103,7 @@
             </li>
             <li>
               <div class="change-language d-none d-sm-block">
-                <select class="language-bar" id="languageSelector">
+                <select class="language-bar" id="languageSelectorDesktop">
                   <option value="en" selected>English</option>
                   <option value="fr">Français</option>
                   <option value="ht">Kreyòl Ayisyen</option>
@@ -123,7 +123,7 @@
             </a>
           </div>
           <div class="change-language d-sm-none ms-auto me-3 text--title">
-            <select class="language-bar" id="languageSelector">
+            <select class="language-bar" id="languageSelectorMobile">
               <option value="en" selected>English</option>
               <option value="fr">Français</option>
               <option value="ht">Kreyòl Ayisyen</option>
@@ -1343,39 +1343,42 @@
         ht: "./assets/lang/ht.json",
       };
 
-      // Fonction pour charger et appliquer les traductions
-      async function loadTranslations(lang) {
-        try {
-          const response = await fetch(translations[lang]);
-          if (!response.ok) {
-            throw new Error(
-              `Erreur lors du chargement du fichier de langue: ${lang}`
-            );
-          }
-          const data = await response.json();
-
-          // Mise à jour du contenu de la page
-          document.querySelectorAll("[data-translate]").forEach((element) => {
-            const key = element.getAttribute("data-translate");
-            if (data[key]) {
-              element.textContent = data[key];
-            }
-          });
-        } catch (error) {
-          console.error(error.message);
-        }
-      }
-
-      // Gestion du changement de langue
       document
-        .getElementById("languageSelector")
-        .addEventListener("change", (event) => {
-          const selectedLang = event.target.value;
-          loadTranslations(selectedLang);
+      .getElementById("languageSelectorDesktop")
+      .addEventListener("change", (event) => {
+        const selectedLang = event.target.value;
+        console.log("Langue sélectionnée (Desktop) :", selectedLang);
+        loadTranslations(selectedLang);
+      });
+    
+    document
+      .getElementById("languageSelectorMobile")
+      .addEventListener("change", (event) => {
+        const selectedLang = event.target.value;
+        console.log("Langue sélectionnée (Mobile) :", selectedLang);
+        loadTranslations(selectedLang);
+      });
+    
+    async function loadTranslations(lang) {
+      try {
+        console.log("Chargement des traductions pour :", lang);
+        const response = await fetch(translations[lang]);
+        if (!response.ok) {
+          throw new Error(`Erreur lors du chargement du fichier de langue: ${lang}`);
+        }
+        const data = await response.json();
+        console.log("Traductions chargées :", data);
+    
+        document.querySelectorAll("[data-translate]").forEach((element) => {
+          const key = element.getAttribute("data-translate");
+          if (data[key]) {
+            element.textContent = data[key];
+          }
         });
-
-      // Charger la langue par défaut (anglais)
-      loadTranslations("en");
+      } catch (error) {
+        console.error(error.message);
+      }
+    }
     </script>
   </body>
 </html>

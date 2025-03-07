@@ -1342,43 +1342,87 @@
         fr: "./assets/lang/fr.json",
         ht: "./assets/lang/ht.json",
       };
-
-      document
-      .getElementById("languageSelectorDesktop")
-      .addEventListener("change", (event) => {
-        const selectedLang = event.target.value;
-        console.log("Langue sélectionnée (Desktop) :", selectedLang);
-        loadTranslations(selectedLang);
-      });
-    
-    document
-      .getElementById("languageSelectorMobile")
-      .addEventListener("change", (event) => {
-        const selectedLang = event.target.value;
-        console.log("Langue sélectionnée (Mobile) :", selectedLang);
-        loadTranslations(selectedLang);
-      });
-    
-    async function loadTranslations(lang) {
-      try {
-        console.log("Chargement des traductions pour :", lang);
-        const response = await fetch(translations[lang]);
-        if (!response.ok) {
-          throw new Error(`Erreur lors du chargement du fichier de langue: ${lang}`);
-        }
-        const data = await response.json();
-        console.log("Traductions chargées :", data);
-    
-        document.querySelectorAll("[data-translate]").forEach((element) => {
-          const key = element.getAttribute("data-translate");
-          if (data[key]) {
-            element.textContent = data[key];
+      
+      // Fonction pour charger et appliquer les traductions
+      async function loadTranslations(lang) {
+        try {
+          const response = await fetch(translations[lang]);
+          if (!response.ok) {
+            throw new Error(`Erreur lors du chargement du fichier de langue: ${lang}`);
           }
-        });
-      } catch (error) {
-        console.error(error.message);
+          const data = await response.json();
+      
+          // Mise à jour du contenu de la page
+          document.querySelectorAll("[data-translate]").forEach((element) => {
+            const key = element.getAttribute("data-translate");
+      
+            if (data[key]) {
+              // Gestion des éléments textuels (p, h1, h2, span, etc.)
+              if (element.textContent) {
+                element.textContent = data[key];
+              }
+      
+              // Gestion des inputs (placeholder, value)
+              if (element.tagName === "INPUT") {
+                const inputType = element.getAttribute("type");
+      
+                // Traduire le placeholder
+                if (element.hasAttribute("placeholder")) {
+                  element.setAttribute("placeholder", data[key]);
+                }
+      
+                // Traduire la valeur (value) si nécessaire
+                if (inputType === "submit" || inputType === "button") {
+                  element.value = data[key];
+                }
+              }
+      
+              // Gestion des textarea (placeholder)
+              if (element.tagName === "TEXTAREA" && element.hasAttribute("placeholder")) {
+                element.setAttribute("placeholder", data[key]);
+              }
+      
+              // Gestion des boutons (button)
+              if (element.tagName === "BUTTON") {
+                element.textContent = data[key];
+              }
+            }
+          });
+        } catch (error) {
+          console.error(error.message);
+        }
       }
-    }
+      
+      // Fonction pour sauvegarder la langue sélectionnée dans localStorage
+      function saveLanguageToLocalStorage(lang) {
+        localStorage.setItem('selectedLanguage', lang);
+      }
+      
+      // Fonction pour charger la langue depuis localStorage
+      function loadLanguageFromLocalStorage() {
+        const savedLang = localStorage.getItem('selectedLanguage');
+        return savedLang || 'en'; // Si aucune langue n'est sauvegardée, on charge 'en' par défaut
+      }
+      
+      // Gestion du changement de langue pour les deux sélecteurs
+      document.getElementById("languageSelectorDesktop").addEventListener("change", (event) => {
+        const selectedLang = event.target.value;
+        loadTranslations(selectedLang);
+        saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
+      });
+      
+      document.getElementById("languageSelectorMobile").addEventListener("change", (event) => {
+        const selectedLang = event.target.value;
+        loadTranslations(selectedLang);
+        saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
+      });
+      
+      // Charger la langue par défaut (ou la langue sauvegardée dans localStorage)
+      const defaultLang = loadLanguageFromLocalStorage();
+      loadTranslations(defaultLang);
+      document.getElementById("languageSelectorDesktop").value = defaultLang;
+      document.getElementById("languageSelectorMobile").value = defaultLang;
+      
     </script>
   </body>
 </html>

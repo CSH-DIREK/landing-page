@@ -1447,6 +1447,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    padding-top: 20px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1539,6 +1540,7 @@ textarea {
 
 .how-wrapper {
     counter-reset: how-counter;
+    padding-top: 20px;
 }
 
 .how__item {

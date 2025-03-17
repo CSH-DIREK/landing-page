@@ -146,5 +146,9 @@
   "contact_adress" : "Adresse",
   "contact_message_message" : "Votre message",
   "contact_email_email" : "Votre adresse e-mail",
-  "contact_name_name" : "Votre nom"
+  "contact_name_name" : "Votre nom",
+  "remerciement" : "Grâce à C$H DIREK, j’ai arrêté d’attendre en file à la banque et je peux envoyer de l’argent à ma famille sans aucun souci. Le système est rapide, facile à utiliser et me met en confiance, car chaque transaction est effectuée en toute sécurité. Je n’ai pas besoin d’aller loin pour déposer ou retirer de l’argent, car des agents sont partout.",
+  "remerciement_1" : "Depuis que je suis devenu un agent principal de C$H DIREK, ma vie a complètement changé. Non seulement je gère mon propre réseau d’agents, mais j’aide aussi beaucoup de personnes dans la communauté à accéder à des services financiers modernes. Le système repose sur la clarté, la transparence et la flexibilité, ce qui me permet de faire mon travail en toute confiance. De plus, cela me donne l’opportunité de développer une entreprise rentable tout en ayant un impact positif sur la vie des autres.",
+  "remerciement_2 ": "Travailler comme agent C$H DIREK est l’une des meilleures décisions que j’ai prises. Je peux servir les gens de ma communauté qui n’ont pas accès aux banques, tout en gagnant de l’argent. La plateforme est très facile à utiliser, et la formation que j’ai reçue m’aide à être professionnel dans mon travail. Je suis fier de faire partie d’un mouvement qui change la façon dont les transactions se font en Haïti."
+
 }

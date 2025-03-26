@@ -38,7 +38,7 @@
     <meta property="og:url" content="https://cshdirek.com" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <title>CshDirek S.A - Home</title>
+    <title>CshDirek S.A - Register</title>
 
     <link rel="stylesheet" href="./assets/frontend/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/frontend/css/animate.css" />
@@ -53,9 +53,66 @@
   </head>
 
   <body>
-    <!-- header -->
-    <div class="navbar-top">
-      <div class="container"></div>
+    <div class="overlayer"></div>
+
+    <!-- Header -->
+    <div class="navbar-top bg--base">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap justify-content-evenly justify-content-md-between"
+        >
+          <ul class="social-icons py-1 py-md-0">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61569848916196&mibextid=ZbWKwL"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://x.com/cshdirek?s=11"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/cshdirek/profilecard/?igsh=MW1iZzVocmc4eW0zeQ=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/csh-direk-sa-6b6125342"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/@CSHDIREKSA"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="contact-bar py-1 py-md-0">
+            <li>
+              <a href="Tel:+1 (645) 221-9141">+1 (645) 221-9141</a>
+            </li>
+            <li>
+              <a href="Mailto:support@cshdirek.com">support@cshdirek.com</a>
+            </li>
+            <li>
+              <div class="change-language d-none d-sm-block">
+                <select class="language-bar" id="languageSelectorDesktop">
+                  <option value="en" selected>English</option>
+                  <option value="fr">Français</option>
+                  <option value="ht">Kreyòl Ayisyen</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="navbar-bottom">
       <div class="container">
@@ -65,211 +122,323 @@
               <img src="./assets/images/logo.png" alt="logo" />
             </a>
           </div>
+          <div class="change-language d-sm-none ms-auto me-3 text--title">
+            <select class="language-bar" id="languageSelectorMobile">
+              <option value="en" selected>English</option>
+              <option value="fr">Français</option>
+              <option value="ht">Kreyòl Ayisyen</option>
+            </select>
+          </div>
+          <div class="nav-toggle d-lg-none">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-menu-area">
+            <div class="menu-close text--danger d-lg-none">
+              <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-menu">
+              <li>
+                <a target="" href="/" data-translate="home">Home</a>
+              </li>
+              <li>
+                <a target="" href="/about.html" data-translate="about">About</a>
+              </li>
+              <li>
+                <a target="" href="/#services" data-translate="services"
+                  >Services</a
+                >
+              </li>
+              <!-- <li>
+              <a target="" href="/contact.html" data-translate="join_us">Join Us</a>
+            </li> -->
+              <li>
+                <a target="" href="/contact.html" data-translate="contact"
+                  >Contact</a
+                >
+              </li>
+
+              <li>
+                <div class="btn__grp ms-lg-3">
+                  <a
+                    href="https://sandbox.cshdirek.com/admin/cshdirek/login/"
+                    class="cmn--btn"
+                    data-translate="login"
+                    >Login</a
+                  >
+                  <a
+                    href="./register.html"
+                    class="cmn--btn btn-outline"
+                    data-translate="register"
+                    >Register</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <!-- Header -->
-<div class="container_1">
-      <header>Création de Compte Agent Autorisé</header>
-      <form action="#">
-        <div class="form first">
-          <div class="details personal">
-            <div class="fields">
-              <div class="input-field">
-                <label>Nom de l'Entreprise</label>
-                <input type="text" placeholder="" required />
-              </div>
-              <div class="input-field">
-                <label>Departement</label>
-                <select id="departement" required>
-                  <option disabled selected>Choisir un département</option>
-                  <option value="OUEST">OUEST</option>
-                  <option value="SUD">SUD</option>
-                  <option value="NORD">NORD</option>
-                  <option value="NORD-EST">NORD-EST</option>
-                  <option value="NORD-OUEST">NORD-OUEST</option>
-                  <option value="ARTIBONITE">ARTIBONITE</option>
-                  <option value="CENTRE">CENTRE</option>
-                  <option value="GRAND ANSE">GRAND ANSE</option>
-                  <option value="NIPPES">NIPPES</option>
-                  <option value="EST">EST</option>
-                </select>
-              </div>
-              <div class="input-field">
-                <label>Position GPS</label>
-                <input type="number" placeholder="" required />
-              </div>
-              <div class="input-field">
-                <label>Latitude</label>
-                <input type="number" placeholder="" required />
-              </div>
-              <div class="input-field">
-                <label>Cluster</label>
-                <select id="cluster" required>
-                  <option disabled selected>Choisir un cluster</option>
-                </select>
-              </div>
-              <div class="input-field">
-                <label>Adresse de l'Entreprise</label>
-                <input type="text" placeholder="" required />
-              </div>
-            </div>
-          </div>
-          <div class="details ID">
-            <div class="fields">
-              <div class="input-field">
-                <label>Adresse du proprietaire</label>
-                <input type="text" placeholder="" required />
-              </div>
-              <div class="input-field">
-                <label>Type d'Entreprise</label>
-                <select required>
-                  <option value="AUTO PARTS">AUTO PARTS</option>
-                  <option value="AUTRES">AUTRES</option>
-                  <option value="BAR / RESTAURANT">BAR / RESTAURANT</option>
-                  <option value="BOUTIQUE">BOUTIQUE</option>
-                  <option value="BUREAU DE GESTION">BUREAU DE GESTION</option>
-                  <option value="CLINIQUE MEDICAL">CLINIQUE MEDICAL</option>
-                  <option value="CYBER CAFÉ">CYBER CAFÉ</option>
-                  <option value="DISTRIBUTEUR DE BOISSONS GAZEUSES">
-                    DISTRIBUTEUR DE BOISSONS GAZEUSES
-                  </option>
-                  <option value="FOURNITURES ÉLECTRONIQUES">
-                    FOURNITURES ÉLECTRONIQUES
-                  </option>
-                  <option value="FOURNITURES SCOLAIRES">
-                    FOURNITURES SCOLAIRES
-                  </option>
-                  <option value="HOTELLERIE">HOTELLERIE</option>
-                  <option value="IMPORT-EXPORT">IMPORT-EXPORT</option>
-                  <option value="LOTTERIE">LOTTERIE</option>
-                  <option value="MAISON DE TRANSFERT">MAISON DE TRANSFERT</option>
-                  <option value="MULTI-SERVICES">MULTI-SERVICES</option>
-                  <option value="PHARMACIE">PHARMACIE</option>
-                  <option value="PRODUITS ALIMENTAIRES">
-                    PRODUITS ALIMENTAIRES
-                  </option>
-                  <option value="QUINCAILLERIE">QUINCAILLERIE</option>
-                  <option value="RAVITAILLEMENT (EAU TRAITÉE)">
-                    RAVITAILLEMENT (EAU TRAITÉE)
-                  </option>
-                  <option value="RECHARGE POS">RECHARGE POS</option>
-                  <option value="SALON DE BEAUTE / BARBER SHOP">
-                    SALON DE BEAUTE / BARBER SHOP
-                  </option>
-                  <option value="SERVICES">SERVICES</option>
-                  <option value="SERVICES FINANCIERS">SERVICES FINANCIERS</option>
-                  <option value="STATION-ESSENCE">STATION-ESSENCE</option>
-                  <option value="SUPERMARKET">SUPERMARKET</option>
-                  <option value="TÉLÉCOMMUNICATION">TÉLÉCOMMUNICATION</option>
-                  <option value="VÊTEMENTS">VÊTEMENTS</option>
-                </select>
-              </div>
-              <div class="input-field">
-                <label>Categories</label>
-                <select required>
-                  <option disabled selected>Silver</option>
-                  <option>Bronze</option>
-                  <option>Gold</option>
-                </select>
-              </div>
-              <div class="input-field">
-                <label>Adresse Electronique</label>
-                <input
-                  type="email"
-                  placeholder="Adresse Electronique de l'entreprise"
-                  required
-                />
-              </div>
-              <div class="input-field">
-                <label>Telephone du Proprietaire</label>
-                <input type="number" placeholder="" required />
-              </div>
-              <div class="input-field">
-                <label>CIN/NINU</label>
-                <input type="number" placeholder="" required />
-              </div>
-            </div>
-            <button class="nextBtn">
-              <span class="btnText">Next</span>
-              <i class="uil uil-navigator"></i>
-            </button>
-          </div>
-        </div>
-        <div class="form second">
-          <div class="details address">
-            <span class="title">Document</span>
-            <div class="fields">
-              <div class="input-field file-input-container">
-                <label for="file-input">Piece d'identification du proprietaire</label>
-                <div class="custom-file-label"></div>
-                <input type="file"  id="file-input" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Preuve d'adresse du proprietaire</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Photo de la face l'Entreprise</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Photo du dos l'Entreprise</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Patente</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Autre Document</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-            </div>
-          </div>
-          <div class="details family">
-            <div class="fields">
-              <div class="input-field file-input-container">
-                <label>Preuve d'adresse de l'employe</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Piece d'identification de l'employe</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Matricule Fiscale de l'Entreprise</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-              <div class="input-field file-input-container">
-                <label>Photo de bord de l'entreprise</label>
-                <div class="custom-file-label"></div>
-                <input type="file" required />
-              </div>
-            </div>
-            <div class="buttons">
-              <div class="backBtn">
-                <i class="uil uil-navigator"></i>
-                <span class="btnText">Back</span>
-              </div>
+    <section class="ctas-section pt-10 pb-50 position-relative overflow-hidden">
+      <div class="container">
+        <section class="register_con pt-10 pb-50">
+          <h3>Création Compte Autorisé</h3>
+          <form class="contact-form row g-4">
+            <div class="form first">
+              <div class="details personal">
+                <div class="fields">
+                  <div class="input-field">
+                    <label>Type compte</label>
+                    <select name="user_type" id="user_type" required>
+                      <option disabled selected>Choisir le type compte</option>
+                      <option value="supervisor">Master Agent</option>
+                      <option value="vendor" selected>Agent</option>
+                    </select>
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Nom de l'Entreprise</label>
+                    <input
+                      name="entreprise_nom"
+                      placeholder="Nom de l'Entreprise"
+                      type="text"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Prénom du proprietaire</label>
+                    <input
+                      name="first_name"
+                      type="text"
+                      placeholder="Prénom du propriétaire"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
 
-              <button class="sumbit" type="submit" disabled>
-                <span class="btnText">Submit</span>
-                <i class="uil uil-navigator"></i>
-              </button>
+                  <div class="input-field">
+                    <label>Nom du proprietaire</label>
+                    <input
+                      name="last_name"
+                      type="text"
+                      placeholder="Nom du propriétaire"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+
+                  <div class="input-field">
+                    <label>Pays</label>
+                    <select name="country" id="country" required></select>
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Departement</label>
+                    <select
+                      name="departement"
+                      id="departement"
+                      required
+                    ></select>
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Longitude</label>
+                    <input
+                      name="longitude"
+                      placeholder="Longitude"
+                      type="number"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Latitude</label>
+                    <input
+                      name="latitude"
+                      placeholder="Latitude"
+                      type="number"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Ville</label>
+                    <select name="city" id="city" required></select>
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Adresse de l'Entreprise</label>
+                    <input
+                      name="entreprise_adresse"
+                      placeholder="Adresse de l'Entreprise"
+                      type="text"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Adresse du proprietaire</label>
+                    <input
+                      name="proprietaire_adresse"
+                      placeholder="Adresse du proprietaire"
+                      type="text"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Type d'Entreprise</label>
+                    <select
+                      name="type_entreprise"
+                      id="type_entreprise"
+                      required
+                    ></select>
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Categories</label>
+                    <select name="categorie" id="categorie" required></select>
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Adresse Electronique</label>
+                    <input
+                      name="proprietaire_email"
+                      type="email"
+                      placeholder="Adresse Electronique de l'entreprise"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Telephone du Proprietaire</label>
+                    <input
+                      name="proprietaire_telephone"
+                      placeholder="Telephone du Proprietaire"
+                      type="tel"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>Genre du Proprietaire</label>
+                    <select name="genre" id="genre" required></select>
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field">
+                    <label>CIN/NINU</label>
+                    <input
+                      name="number_piece"
+                      placeholder="CIN/NINU"
+                      type="number"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                </div>
+                <div class="col-xl-12 pt-10 form-group">
+                  <button class="nextBtn cmn--btn">Suivant</button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </form>
-    </div>
+            <div class="form second">
+              <div class="details address">
+                <span class="title">Document</span>
+                <div class="fields">
+                  <div class="input-field file-input-container">
+                    <label for="file-input"
+                      >Piece d'identification du proprietaire</label
+                    >
+                    <div class="custom-file-label"></div>
+                    <input
+                      type="file"
+                      name="piece_identite_proprietaire"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Preuve d'adresse du proprietaire</label>
+                    <div class="custom-file-label"></div>
+                    <input
+                      type="file"
+                      name="preuve_adresse_proprietaire"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Photo de la face l'Entreprise</label>
+                    <div class="custom-file-label"></div>
+                    <input type="file" name="photo_face_entreprise" required />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Photo du dos l'Entreprise</label>
+                    <div class="custom-file-label"></div>
+                    <input type="file" name="photo_dos_entreprise" required />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Patente</label>
+                    <div class="custom-file-label"></div>
+                    <input type="file" name="patente" required />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Autre Document</label>
+                    <div class="custom-file-label"></div>
+                    <input type="file" name="autre_document" required />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="details family">
+                <div class="fields">
+                  <div class="input-field file-input-container">
+                    <label>Preuve d'adresse de l'employe</label>
+                    <div class="custom-file-label"></div>
+                    <input type="file" name="preuve_adresse_employe" required />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Piece d'identification de l'employe</label>
+                    <div class="custom-file-label"></div>
+                    <input type="file" name="piece_identite_employe" required />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Matricule Fiscale de l'Entreprise</label>
+                    <div class="custom-file-label"></div>
+                    <input
+                      type="file"
+                      name="matricule_fiscale_entreprise"
+                      required
+                    />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                  <div class="input-field file-input-container">
+                    <label>Photo de bord de l'entreprise</label>
+                    <div class="custom-file-label"></div>
+                    <input type="file" name="photo_bord_entreprise" required />
+                    <div class="error-message text-danger"></div>
+                  </div>
+                </div>
+                <div class="buttons pt-10">
+                  <div class="backBtn cmn--btn">Back</div>
+                  <button class="sumbit cmn--btn" type="submit" disabled>
+                    Soumettre
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="position-relative overflow-hidden">
@@ -295,10 +464,14 @@
                 <a href="./privacy.docx" data-translate="privacy">Privacy</a>
               </li>
               <li>
-                <a href="./privacy.docx" data-translate="term">Terms and Condition</a>
+                <a href="./privacy.docx" data-translate="term"
+                  >Terms and Condition</a
+                >
               </li>
               <li>
-                <a href="./legal_moniteur.pdf" data-translate="moniteur">Legal Moniteur</a>
+                <a href="./legal_moniteur.pdf" data-translate="moniteur"
+                  >Legal Moniteur</a
+                >
               </li>
             </ul>
           </div>
@@ -325,7 +498,7 @@
       const form = document.querySelector("form"),
         nextBtn = form.querySelector(".nextBtn"),
         backBtn = form.querySelector(".backBtn"),
-        allInput = form.querySelectorAll(".first input:not([type='file'])"); 
+        allInput = form.querySelectorAll(".first input:not([type='file'])");
 
       nextBtn.addEventListener("click", () => {
         let allFilled = true;
@@ -342,8 +515,9 @@
         }
       });
 
-      backBtn.addEventListener("click", () => form.classList.remove("secActive"));
-
+      backBtn.addEventListener("click", () =>
+        form.classList.remove("secActive")
+      );
 
       function handleFileInput(event) {
         const container = event.target.closest(".file-input-container");
@@ -359,12 +533,10 @@
         checkFields();
       }
 
-
       const fileInputs = document.querySelectorAll('input[type="file"]');
       fileInputs.forEach((input) => {
         input.addEventListener("change", handleFileInput);
       });
-
 
       function checkFields() {
         const allTextInputs = form.querySelectorAll(
@@ -390,7 +562,6 @@
         submitButton.disabled = !(allTextFilled && allFilesFilled);
       }
 
-
       const textInputs = form.querySelectorAll(
         'input[type="text"], input[type="number"], input[type="email"], select'
       );
@@ -402,36 +573,169 @@
       });
     </script>
     <script>
-      const clustersParDepartement = {
-        OUEST: ["Delmas", "Pétion-Ville", "Port-au-Prince", "Carrefour"],
-        SUD: ["Cayes", "Cavaillon", "Aquin", "Port-Salut"],
-        NORD: ["Cap-Haïtien", "Limbé", "Grande-Rivière-du-Nord"],
-        "NORD-EST": ["Ouanaminthe", "Fort-Liberté", "Trou-du-Nord"],
-        "NORD-OUEST": ["Port-de-Paix", "Gonaïves", "Saint-Louis-du-Nord"],
-        ARTIBONITE: ["Gonaïves", "Saint-Marc", "Verrettes"],
-        CENTRE: ["Hinche", "Mirebalais", "Lascahobas"],
-        "GRAND ANSE": ["Jérémie", "Anse-d'Hainault", "Dame-Marie"],
-        NIPPES: ["Miragoâne", "Baradères", "Petit-Trou-de-Nippes"],
-        EST: ["Jacmel", "Belle-Anse", "Marigot"],
-      };
+      const API_URL = "https://sandbox.cshdirek.com/api/v1/landing";
 
-      document.getElementById("departement").addEventListener("change", function () {
-        const departement = this.value; 
-        const clusterSelect = document.getElementById("cluster");
-
-
-        clusterSelect.innerHTML = '<option disabled selected>Choisir un cluster</option>';
-
-
-        if (departement && clustersParDepartement[departement]) {
-          clustersParDepartement[departement].forEach((cluster) => {
-            const option = document.createElement("option");
-            option.value = cluster;
-            option.textContent = cluster;
-            clusterSelect.appendChild(option);
-          });
+      // Fill select
+      function fillSelect(
+        endpoint,
+        selectId,
+        defaultText,
+        filter = null,
+        defaultValue = null
+      ) {
+        const select = document.getElementById(selectId);
+        select.innerHTML = `<option value="" disabled selected>${defaultText}</option>`;
+        let url = `${API_URL}/${endpoint}/`;
+        if (filter) {
+          const query = new URLSearchParams(filter).toString();
+          url += `?${query}`;
         }
-      });
+        fetch(url)
+          .then((res) => res.json())
+          .then((data) => {
+            if (!Array.isArray(data.results)) return;
+            data.results.forEach((item) => {
+              const opt = document.createElement("option");
+              opt.value = item.id;
+              opt.textContent = item.name;
+              if (item.id === defaultValue) opt.selected = true;
+              select.appendChild(opt);
+            });
+          });
+      }
+
+      // Initial load
+      fillSelect("countries", "country", "Choisir un pays", null, "HT");
+      fillSelect("cities", "city", "Choisir un ville");
+      fillSelect("departements", "departement", "Choisir un département");
+      fillSelect("genders", "genre", "Genre du Proprietaire");
+      fillSelect("categories", "categorie", "Choisir une catégorie");
+      fillSelect(
+        "type-entreprises",
+        "type_entreprise",
+        "Choisir un type d'entreprise"
+      );
+
+      // city auto load on departement change
+      document
+        .getElementById("departement")
+        .addEventListener("change", function () {
+          fillSelect("cities", "city", "Choisir un ville", {
+            departement: this.value,
+          });
+        });
+    </script>
+    <script>
+      document
+        .querySelector("form")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          document
+            .querySelectorAll(".error-message")
+            .forEach((el) => (el.textContent = ""));
+          const formData = new FormData();
+
+          // Champs texte
+          const fields = [
+            "user_type",
+            "first_name",
+            "last_name",
+            "entreprise_nom",
+            "country",
+            "departement",
+            "longitude",
+            "latitude",
+            "city",
+            "entreprise_adresse",
+            "proprietaire_adresse",
+            "type_entreprise",
+            "categorie",
+            "proprietaire_email",
+            "proprietaire_telephone",
+            "genre",
+            "number_piece",
+          ];
+
+          fields.forEach((field) => {
+            const input = document.querySelector(`[name="${field}"]`);
+            if (input) formData.append(field, input.value);
+          });
+
+          // Champs fichiers
+          const fileFields = [
+            "piece_identite_proprietaire",
+            "preuve_adresse_proprietaire",
+            "photo_face_entreprise",
+            "photo_dos_entreprise",
+            "patente",
+            "autre_document",
+            "preuve_adresse_employe",
+            "piece_identite_employe",
+            "matricule_fiscale_entreprise",
+            "photo_bord_entreprise",
+          ];
+
+          fileFields.forEach((fieldName) => {
+            const input = document.querySelector(`[name="${fieldName}"]`);
+            if (input && input.files.length > 0) {
+              formData.append(fieldName, input.files[0]);
+            }
+          });
+
+          const submitBtn = document.querySelector(".sumbit");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Chargement...";
+
+          try {
+            const res = await fetch(
+              "https://sandbox.cshdirek.com/api/v1/landing/register/",
+              {
+                method: "POST",
+                body: formData,
+              }
+            );
+
+            const data = await res.json();
+
+            if (res.ok) {
+              form.style.display = "none";
+
+              const successDiv = document.createElement("div");
+              successDiv.className = "text-center mt-5";
+
+              successDiv.innerHTML = `
+                <h4 class="text-success mb-4">✅ Demande soumise avec succès !</h4>
+                <p class="mb-4">
+                  Nous avons bien reçu votre demande. Notre équipe analysera votre dossier
+                  et vous recevrez une réponse sous peu.
+                </p>
+                <a href="https://sandbox.cshdirek.com/admin/cshdirek/login/" class="cmn--btn" data-translate="login">Login</a>
+              `;
+
+              form.parentNode.appendChild(successDiv);
+            } else {
+              const errors = data.errors || data;
+              form.classList.remove("secActive");
+              for (const field in errors) {
+                const input = document.querySelector(`[name='${field}']`);
+                if (input) {
+                  const errorDiv = input
+                    .closest(".input-field")
+                    .querySelector(".error-message");
+                  if (errorDiv) {
+                    errorDiv.textContent = errors[field].join(", ");
+                  }
+                }
+              }
+            }
+          } catch (error) {
+            console.error("Erreur réseau :", error);
+            alert("Erreur réseau !");
+          }
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Soumettre";
+        });
     </script>
   </body>
 </html>

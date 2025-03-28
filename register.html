@@ -184,59 +184,62 @@
     <section class="ctas-section pt-10 pb-50 position-relative overflow-hidden">
       <div class="container">
         <section class="register_con pt-10 pb-50">
-          <h3>Création Compte Autorisé</h3>
+          <h3 data-translate="register_h3">Envoyez, recevez, payez en toute simplicité – Créez votre compte CSH Direk</h3>
           <form class="contact-form row g-4">
             <div class="form first">
               <div class="details personal">
                 <div class="fields">
                   <div class="input-field">
-                    <label>Type compte</label>
+                    <label data-translate="register_label">Type compte</label>
                     <select name="user_type" id="user_type" required>
-                      <option disabled selected>Choisir le type compte</option>
+                      <option disabled selected data-translate="register_option">Choisir le type compte</option>
                       <option value="supervisor">Master Agent</option>
                       <option value="vendor" selected>Agent</option>
                     </select>
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Nom de l'Entreprise</label>
+                    <label data-translate="register_label1">Nom de l'Entreprise</label>
                     <input
                       name="entreprise_nom"
                       placeholder="Nom de l'Entreprise"
+                      data-translate="register_placeholder"
                       type="text"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Prénom du proprietaire</label>
+                    <label data-translate="register_label2">Prénom du proprietaire</label>
                     <input
                       name="first_name"
                       type="text"
                       placeholder="Prénom du propriétaire"
+                      data-translate="register_palceholder2"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
 
                   <div class="input-field">
-                    <label>Nom du proprietaire</label>
+                    <label  data-translate="register_label3">Nom du proprietaire</label>
                     <input
                       name="last_name"
                       type="text"
                       placeholder="Nom du propriétaire"
+                      data-translate="register_placeholder3"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
 
                   <div class="input-field">
-                    <label>Pays</label>
+                    <label data-translate="register_label4">Pays</label>
                     <select name="country" id="country" required></select>
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Departement</label>
+                    <label data-translate="register_label5">Département</label>
                     <select
                       name="departement"
                       id="departement"
@@ -245,52 +248,56 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Longitude</label>
+                    <label data-translate="register_label6">Longitude</label>
                     <input
                       name="longitude"
                       placeholder="Longitude"
+                      data-translate="register_longitude"
                       type="number"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Latitude</label>
+                    <label data-translate="register_label7">Latitude</label>
                     <input
                       name="latitude"
                       placeholder="Latitude"
+                      data-translate="register_latitude"
                       type="number"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Ville</label>
+                    <label data-translate="register_label8">Ville</label>
                     <select name="city" id="city" required></select>
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Adresse de l'Entreprise</label>
+                    <label data-translate="register_label9">Adresse de l'Entreprise</label>
                     <input
                       name="entreprise_adresse"
                       placeholder="Adresse de l'Entreprise"
+                      data-translate="register_label9"
                       type="text"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Adresse du proprietaire</label>
+                    <label data-translate="register_label_adresse">Adresse du proprietaire</label>
                     <input
                       name="proprietaire_adresse"
                       placeholder="Adresse du proprietaire"
+                      data-translate="placeholder_adresse"
                       type="text"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Type d'Entreprise</label>
+                    <label data-translate="register_label_type">Type d'Entreprise</label>
                     <select
                       name="type_entreprise"
                       id="type_entreprise"
@@ -299,32 +306,34 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Categories</label>
+                    <label data-translate="categorie">Catégories</label>
                     <select name="categorie" id="categorie" required></select>
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Adresse Electronique</label>
+                    <label data-translate="electronique">Adresse Electronique</label>
                     <input
                       name="proprietaire_email"
                       type="email"
                       placeholder="Adresse Electronique de l'entreprise"
+                      data-translate="placeholder_electroique"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Telephone du Proprietaire</label>
+                    <label data-translate="telephone_register">Téléphone du Proprietaire</label>
                     <input
                       name="proprietaire_telephone"
-                      placeholder="Telephone du Proprietaire"
+                      placeholder="Téléphone du Proprietaire"
+                      data-translate="placeholder_telephone"
                       type="tel"
                       required
                     />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label>Genre du Proprietaire</label>
+                    <label data-translate="genre">Genre du Proprietaire</label>
                     <select name="genre" id="genre" required></select>
                     <div class="error-message text-danger"></div>
                   </div>
@@ -340,17 +349,17 @@
                   </div>
                 </div>
                 <div class="col-xl-12 pt-10 form-group">
-                  <button class="nextBtn cmn--btn">Suivant</button>
+                  <button class="nextBtn cmn--btn" data-translate="suivant">Suivant</button>
                 </div>
               </div>
             </div>
             <div class="form second">
               <div class="details address">
-                <span class="title">Document</span>
+                <span class="title" data-translate="docx">Document</span>
                 <div class="fields">
                   <div class="input-field file-input-container">
-                    <label for="file-input"
-                      >Piece d'identification du proprietaire</label
+                    <label for="file-input" data-translate="piece"
+                      >Pièce d'identification du proprietaire</label
                     >
                     <div class="custom-file-label"></div>
                     <input
@@ -361,7 +370,7 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Preuve d'adresse du proprietaire</label>
+                    <label data-translate="labdel_preuve">Preuve d'adresse du proprietaire</label>
                     <div class="custom-file-label"></div>
                     <input
                       type="file"
@@ -371,25 +380,25 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Photo de la face l'Entreprise</label>
+                    <label data-translate="foto">Photo de la face l'Entreprise</label>
                     <div class="custom-file-label"></div>
                     <input type="file" name="photo_face_entreprise" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Photo du dos l'Entreprise</label>
+                    <label data-translate="labelfoto">Photo du dos l'Entreprise</label>
                     <div class="custom-file-label"></div>
                     <input type="file" name="photo_dos_entreprise" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Patente</label>
+                    <label data-translate="patente">Patente</label>
                     <div class="custom-file-label"></div>
                     <input type="file" name="patente" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Autre Document</label>
+                    <label data-translate="autre">Autre Document</label>
                     <div class="custom-file-label"></div>
                     <input type="file" name="autre_document" required />
                     <div class="error-message text-danger"></div>
@@ -399,19 +408,19 @@
               <div class="details family">
                 <div class="fields">
                   <div class="input-field file-input-container">
-                    <label>Preuve d'adresse de l'employe</label>
+                    <label data-translate="preuveemploye">Preuve d'adresse de l'employé</label>
                     <div class="custom-file-label"></div>
                     <input type="file" name="preuve_adresse_employe" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Piece d'identification de l'employe</label>
+                    <label data-translate="emploipiece">Pièce d'identification de l'employé</label>
                     <div class="custom-file-label"></div>
                     <input type="file" name="piece_identite_employe" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Matricule Fiscale de l'Entreprise</label>
+                    <label data-translate="matikil">Matricule Fiscale de l'Entreprise</label>
                     <div class="custom-file-label"></div>
                     <input
                       type="file"
@@ -421,15 +430,15 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label>Photo de bord de l'entreprise</label>
+                    <label data-translate="photo">Photo de bord de l'entreprise</label>
                     <div class="custom-file-label"></div>
                     <input type="file" name="photo_bord_entreprise" required />
                     <div class="error-message text-danger"></div>
                   </div>
                 </div>
                 <div class="buttons pt-10">
-                  <div class="backBtn cmn--btn">Back</div>
-                  <button class="sumbit cmn--btn" type="submit" disabled>
+                  <div class="backBtn cmn--btn" data-translate="precedent">Précédent</div>
+                  <button class="sumbit cmn--btn" type="submit" disabled data-translate="soumettre">
                     Soumettre
                   </button>
                 </div>
@@ -494,6 +503,109 @@
     <script src="./assets/frontend/js/tilt.js"></script>
     <script src="./assets/frontend/js/main.js"></script>
     <script src="./assets/admin/js/sweetalert2@9.js"></script>
+    <script>
+      const translations = {
+        en: "./assets/lang/en.json",
+        fr: "./assets/lang/fr.json",
+        ht: "./assets/lang/ht.json",
+      };
+      
+      // Fonction pour charger et appliquer les traductions
+      async function loadTranslations(lang) {
+        try {
+          const response = await fetch(translations[lang]);
+          if (!response.ok) {
+            throw new Error(`Erreur lors du chargement du fichier de langue: ${lang}`);
+          }
+          const data = await response.json();
+      
+          // 1. Traduire les éléments statiques
+          document.querySelectorAll("[data-translate]").forEach((element) => {
+            const key = element.getAttribute("data-translate");
+            
+            if (data[key]) {
+              // Gestion des éléments textuels
+              if (element.textContent) {
+                element.textContent = data[key];
+              }
+      
+              // Gestion des inputs
+              if (element.tagName === "INPUT") {
+                if (element.hasAttribute("placeholder")) {
+                  element.setAttribute("placeholder", data[key]);
+                }
+                if (element.type === "submit" || element.type === "button") {
+                  element.value = data[key];
+                }
+              }
+      
+              // Gestion des textarea
+              if (element.tagName === "TEXTAREA" && element.hasAttribute("placeholder")) {
+                element.setAttribute("placeholder", data[key]);
+              }
+      
+              // Gestion des boutons
+              if (element.tagName === "BUTTON") {
+                element.textContent = data[key];
+              }
+            }
+          });
+      
+          // 2. Traduire les options des select (textes par défaut)
+          const selectIds = ["city", "departement", "genre", "categorie", "type_entreprise"];
+          selectIds.forEach(selectId => {
+            const select = document.getElementById(selectId);
+            if (select && select.firstElementChild) {
+              const key = `select_${selectId}`;
+              if (data[key]) {
+                select.firstElementChild.textContent = data[key];
+              }
+            }
+          });
+      
+        } catch (error) {
+          console.error(error.message);
+        }
+        if (lang !== currentLang) {
+          fillSelect("cities", "city", "select_city");
+          fillSelect("departements", "departement", "select_departement");
+          fillSelect("genders", "genre", "select_gender");
+          fillSelect("categories", "categorie", "select_category");
+          fillSelect("type-entreprises", "type_entreprise", "select_entreprise_type");
+        }
+      }
+      
+      // Fonction pour sauvegarder la langue sélectionnée dans localStorage
+      function saveLanguageToLocalStorage(lang) {
+        localStorage.setItem('selectedLanguage', lang);
+      }
+      
+      // Fonction pour charger la langue depuis localStorage
+      function loadLanguageFromLocalStorage() {
+        const savedLang = localStorage.getItem('selectedLanguage');
+        return savedLang || 'en'; // Si aucune langue n'est sauvegardée, on charge 'en' par défaut
+      }
+      
+      // Gestion du changement de langue pour les deux sélecteurs
+      document.getElementById("languageSelectorDesktop").addEventListener("change", (event) => {
+        const selectedLang = event.target.value;
+        loadTranslations(selectedLang);
+        saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
+      });
+      
+      document.getElementById("languageSelectorMobile").addEventListener("change", (event) => {
+        const selectedLang = event.target.value;
+        loadTranslations(selectedLang);
+        saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
+      });
+      
+      // Charger la langue par défaut (ou la langue sauvegardée dans localStorage)
+      const defaultLang = loadLanguageFromLocalStorage();
+      loadTranslations(defaultLang);
+      document.getElementById("languageSelectorDesktop").value = defaultLang;
+      document.getElementById("languageSelectorMobile").value = defaultLang;
+      
+    </script>
 
     <script>
       const form = document.querySelector("form"),
@@ -577,51 +689,79 @@
       const API_URL = "https://sandbox.cshdirek.com/api/v1/landing";
 
       // Fill select
-      function fillSelect(
-        endpoint,
-        selectId,
-        defaultText,
-        filter = null,
-        defaultValue = null
-      ) {
-        const select = document.getElementById(selectId);
-        select.innerHTML = `<option value="" disabled selected>${defaultText}</option>`;
-        let url = `${API_URL}/${endpoint}/`;
-        if (filter) {
-          const query = new URLSearchParams(filter).toString();
-          url += `?${query}`;
-        }
-        fetch(url)
-          .then((res) => res.json())
-          .then((data) => {
-            if (!Array.isArray(data.results)) return;
-            data.results.forEach((item) => {
-              const opt = document.createElement("option");
-              opt.value = item.id;
-              opt.textContent = item.name;
-              if (item.id === defaultValue) opt.selected = true;
-              select.appendChild(opt);
-            });
-          });
+      async function fillSelect(
+  endpoint,
+  selectId,
+  translationKey = null,
+  filter = null,
+  defaultValue = null
+) {
+  const select = document.getElementById(selectId);
+  const lang = document.getElementById("languageSelectorDesktop").value;
+  
+
+  let defaultText = "Choisir..."; 
+  
+  if (translationKey) {
+    try {
+      const response = await fetch(translations[lang]);
+      const data = await response.json();
+      defaultText = data[translationKey] || translationKey;
+    } catch (e) {
+      console.error("Erreur de chargement de traduction:", e);
+    }
+  }
+
+  // Sauvegarde la valeur sélectionnée actuelle
+  const currentValue = select.value;
+  
+  select.innerHTML = `<option value="" disabled selected>${defaultText}</option>`;
+  
+  let url = `${API_URL}/${endpoint}/`;
+  if (filter) {
+    const query = new URLSearchParams(filter).toString();
+    url += `?${query}`;
+  }
+  
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    
+    if (Array.isArray(data.results)) {
+      data.results.forEach((item) => {
+        const opt = document.createElement("option");
+        opt.value = item.id;
+        opt.textContent = item.name;
+        if (item.id === defaultValue) opt.selected = true;
+        select.appendChild(opt);
+      });
+      
+      // Restaure la sélection précédente si elle existe
+      if (currentValue && select.querySelector(`option[value="${currentValue}"]`)) {
+        select.value = currentValue;
       }
+    }
+  } catch (error) {
+    console.error("Erreur lors du chargement des données:", error);
+  }
+}
 
       // Initial load
-      fillSelect("countries", "country", "Choisir un pays", null, "HT");
-      fillSelect("cities", "city", "Choisir un ville");
-      fillSelect("departements", "departement", "Choisir un département");
-      fillSelect("genders", "genre", "Genre du Proprietaire");
-      fillSelect("categories", "categorie", "Choisir une catégorie");
-      fillSelect(
-        "type-entreprises",
-        "type_entreprise",
-        "Choisir un type d'entreprise"
-      );
+      // Pour le pays (sans traduction du texte par défaut)
+fillSelect("countries", "country", null, null, "HT");
+
+// Pour les autres select (avec traduction)
+fillSelect("cities", "city", "select_city");
+fillSelect("departements", "departement", "select_departement");
+fillSelect("genders", "genre", "select_gender");
+fillSelect("categories", "categorie", "select_category");
+fillSelect("type-entreprises", "type_entreprise", "select_entreprise_type");
 
       // city auto load on departement change
       document
         .getElementById("departement")
         .addEventListener("change", function () {
-          fillSelect("cities", "city", "Choisir un ville", {
+          fillSelect("cities", "city", "Choisir une ville", {
             departement: this.value,
           });
         });
@@ -706,8 +846,8 @@
               successDiv.className = "text-center mt-5";
 
               successDiv.innerHTML = `
-                <h4 class="text-success mb-4">✅ Demande soumise avec succès !</h4>
-                <p class="mb-4">
+                <h4 class="text-success mb-4" data-translate="success_title">✅ Demande soumise avec succès !</h4>
+                <p class="mb-4" data-translate="login">
                   Nous avons bien reçu votre demande. Notre équipe analysera votre dossier
                   et vous recevrez une réponse sous peu.
                 </p>

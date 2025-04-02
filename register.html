@@ -162,7 +162,7 @@
               <li>
                 <div class="btn__grp ms-lg-3">
                   <a
-                    href="https://sandbox.cshdirek.com/admin/cshdirek/login/"
+                    href="https://api.cshdirek.com/admin/cshdirek/login/"
                     class="cmn--btn"
                     data-translate="login"
                     >Login</a
@@ -184,7 +184,10 @@
     <section class="ctas-section pt-10 pb-50 position-relative overflow-hidden">
       <div class="container">
         <section class="register_con pt-10 pb-50">
-          <h3 data-translate="register_h3">Envoyez, recevez, payez en toute simplicité – Créez votre compte CSH Direk</h3>
+          <h3 data-translate="register_h3">
+            Envoyez, recevez, payez en toute simplicité – Créez votre compte CSH
+            Direk
+          </h3>
           <form class="contact-form row g-4">
             <div class="form first">
               <div class="details personal">
@@ -192,14 +195,22 @@
                   <div class="input-field">
                     <label data-translate="register_label">Type compte</label>
                     <select name="user_type" id="user_type" required>
-                      <option disabled selected data-translate="register_option">Choisir le type compte</option>
+                      <option
+                        disabled
+                        selected
+                        data-translate="register_option"
+                      >
+                        Choisir le type compte
+                      </option>
                       <option value="supervisor">Master Agent</option>
                       <option value="vendor" selected>Agent</option>
                     </select>
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="register_label1">Nom de l'Entreprise</label>
+                    <label data-translate="register_label1"
+                      >Nom de l'Entreprise</label
+                    >
                     <input
                       name="entreprise_nom"
                       placeholder="Nom de l'Entreprise"
@@ -210,7 +221,9 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="register_label2">Prénom du proprietaire</label>
+                    <label data-translate="register_label2"
+                      >Prénom du proprietaire</label
+                    >
                     <input
                       name="first_name"
                       type="text"
@@ -222,7 +235,9 @@
                   </div>
 
                   <div class="input-field">
-                    <label  data-translate="register_label3">Nom du proprietaire</label>
+                    <label data-translate="register_label3"
+                      >Nom du proprietaire</label
+                    >
                     <input
                       name="last_name"
                       type="text"
@@ -275,7 +290,9 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="register_label9">Adresse de l'Entreprise</label>
+                    <label data-translate="register_label9"
+                      >Adresse de l'Entreprise</label
+                    >
                     <input
                       name="entreprise_adresse"
                       placeholder="Adresse de l'Entreprise"
@@ -286,7 +303,9 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="register_label_adresse">Adresse du proprietaire</label>
+                    <label data-translate="register_label_adresse"
+                      >Adresse du proprietaire</label
+                    >
                     <input
                       name="proprietaire_adresse"
                       placeholder="Adresse du proprietaire"
@@ -297,7 +316,9 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="register_label_type">Type d'Entreprise</label>
+                    <label data-translate="register_label_type"
+                      >Type d'Entreprise</label
+                    >
                     <select
                       name="type_entreprise"
                       id="type_entreprise"
@@ -311,7 +332,9 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="electronique">Adresse Electronique</label>
+                    <label data-translate="electronique"
+                      >Adresse Electronique</label
+                    >
                     <input
                       name="proprietaire_email"
                       type="email"
@@ -322,7 +345,9 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="telephone_register">Téléphone du Proprietaire</label>
+                    <label data-translate="telephone_register"
+                      >Téléphone du Proprietaire</label
+                    >
                     <input
                       name="proprietaire_telephone"
                       placeholder="Téléphone du Proprietaire"
@@ -349,7 +374,9 @@
                   </div>
                 </div>
                 <div class="col-xl-12 pt-10 form-group">
-                  <button class="nextBtn cmn--btn" data-translate="suivant">Suivant</button>
+                  <button class="nextBtn cmn--btn" data-translate="suivant">
+                    Suivant
+                  </button>
                 </div>
               </div>
             </div>
@@ -370,7 +397,9 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label data-translate="labdel_preuve">Preuve d'adresse du proprietaire</label>
+                    <label data-translate="labdel_preuve"
+                      >Preuve d'adresse du proprietaire</label
+                    >
                     <div class="custom-file-label"></div>
                     <input
                       type="file"
@@ -380,13 +409,17 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label data-translate="foto">Photo de la face l'Entreprise</label>
+                    <label data-translate="foto"
+                      >Photo de la face l'Entreprise</label
+                    >
                     <div class="custom-file-label"></div>
                     <input type="file" name="photo_face_entreprise" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label data-translate="labelfoto">Photo du dos l'Entreprise</label>
+                    <label data-translate="labelfoto"
+                      >Photo du dos l'Entreprise</label
+                    >
                     <div class="custom-file-label"></div>
                     <input type="file" name="photo_dos_entreprise" required />
                     <div class="error-message text-danger"></div>
@@ -408,19 +441,25 @@
               <div class="details family">
                 <div class="fields">
                   <div class="input-field file-input-container">
-                    <label data-translate="preuveemploye">Preuve d'adresse de l'employé</label>
+                    <label data-translate="preuveemploye"
+                      >Preuve d'adresse de l'employé</label
+                    >
                     <div class="custom-file-label"></div>
                     <input type="file" name="preuve_adresse_employe" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label data-translate="emploipiece">Pièce d'identification de l'employé</label>
+                    <label data-translate="emploipiece"
+                      >Pièce d'identification de l'employé</label
+                    >
                     <div class="custom-file-label"></div>
                     <input type="file" name="piece_identite_employe" required />
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label data-translate="matikil">Matricule Fiscale de l'Entreprise</label>
+                    <label data-translate="matikil"
+                      >Matricule Fiscale de l'Entreprise</label
+                    >
                     <div class="custom-file-label"></div>
                     <input
                       type="file"
@@ -430,15 +469,24 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field file-input-container">
-                    <label data-translate="photo">Photo de bord de l'entreprise</label>
+                    <label data-translate="photo"
+                      >Photo de bord de l'entreprise</label
+                    >
                     <div class="custom-file-label"></div>
                     <input type="file" name="photo_bord_entreprise" required />
                     <div class="error-message text-danger"></div>
                   </div>
                 </div>
                 <div class="buttons pt-10">
-                  <div class="backBtn cmn--btn" data-translate="precedent">Précédent</div>
-                  <button class="sumbit cmn--btn" type="submit" disabled data-translate="soumettre">
+                  <div class="backBtn cmn--btn" data-translate="precedent">
+                    Précédent
+                  </div>
+                  <button
+                    class="sumbit cmn--btn"
+                    type="submit"
+                    disabled
+                    data-translate="soumettre"
+                  >
                     Soumettre
                   </button>
                 </div>
@@ -473,10 +521,12 @@
                 <a href="./privacy.html" data-translate="privacy">Privacy</a>
               </li>
               <li>
-                <a href="./privacy.docx" data-translate="term"
+                <a href="./privacy.html" data-translate="term"
                   >Terms and Condition</a
                 >
-                <a href="./privacy.html" data-translate="term">Terms and Condition</a>
+                <a href="./privacy.html" data-translate="term"
+                  >Terms and Condition</a
+                >
               </li>
               <li>
                 <a href="./legal_moniteur.pdf" data-translate="moniteur"
@@ -509,26 +559,28 @@
         fr: "./assets/lang/fr.json",
         ht: "./assets/lang/ht.json",
       };
-      
+
       // Fonction pour charger et appliquer les traductions
       async function loadTranslations(lang) {
         try {
           const response = await fetch(translations[lang]);
           if (!response.ok) {
-            throw new Error(`Erreur lors du chargement du fichier de langue: ${lang}`);
+            throw new Error(
+              `Erreur lors du chargement du fichier de langue: ${lang}`
+            );
           }
           const data = await response.json();
-      
+
           // 1. Traduire les éléments statiques
           document.querySelectorAll("[data-translate]").forEach((element) => {
             const key = element.getAttribute("data-translate");
-            
+
             if (data[key]) {
               // Gestion des éléments textuels
               if (element.textContent) {
                 element.textContent = data[key];
               }
-      
+
               // Gestion des inputs
               if (element.tagName === "INPUT") {
                 if (element.hasAttribute("placeholder")) {
@@ -538,22 +590,31 @@
                   element.value = data[key];
                 }
               }
-      
+
               // Gestion des textarea
-              if (element.tagName === "TEXTAREA" && element.hasAttribute("placeholder")) {
+              if (
+                element.tagName === "TEXTAREA" &&
+                element.hasAttribute("placeholder")
+              ) {
                 element.setAttribute("placeholder", data[key]);
               }
-      
+
               // Gestion des boutons
               if (element.tagName === "BUTTON") {
                 element.textContent = data[key];
               }
             }
           });
-      
+
           // 2. Traduire les options des select (textes par défaut)
-          const selectIds = ["city", "departement", "genre", "categorie", "type_entreprise"];
-          selectIds.forEach(selectId => {
+          const selectIds = [
+            "city",
+            "departement",
+            "genre",
+            "categorie",
+            "type_entreprise",
+          ];
+          selectIds.forEach((selectId) => {
             const select = document.getElementById(selectId);
             if (select && select.firstElementChild) {
               const key = `select_${selectId}`;
@@ -562,7 +623,6 @@
               }
             }
           });
-      
         } catch (error) {
           console.error(error.message);
         }
@@ -571,40 +631,47 @@
           fillSelect("departements", "departement", "select_departement");
           fillSelect("genders", "genre", "select_gender");
           fillSelect("categories", "categorie", "select_category");
-          fillSelect("type-entreprises", "type_entreprise", "select_entreprise_type");
+          fillSelect(
+            "type-entreprises",
+            "type_entreprise",
+            "select_entreprise_type"
+          );
         }
       }
-      
+
       // Fonction pour sauvegarder la langue sélectionnée dans localStorage
       function saveLanguageToLocalStorage(lang) {
-        localStorage.setItem('selectedLanguage', lang);
+        localStorage.setItem("selectedLanguage", lang);
       }
-      
+
       // Fonction pour charger la langue depuis localStorage
       function loadLanguageFromLocalStorage() {
-        const savedLang = localStorage.getItem('selectedLanguage');
-        return savedLang || 'en'; // Si aucune langue n'est sauvegardée, on charge 'en' par défaut
+        const savedLang = localStorage.getItem("selectedLanguage");
+        return savedLang || "en"; // Si aucune langue n'est sauvegardée, on charge 'en' par défaut
       }
-      
+
       // Gestion du changement de langue pour les deux sélecteurs
-      document.getElementById("languageSelectorDesktop").addEventListener("change", (event) => {
-        const selectedLang = event.target.value;
-        loadTranslations(selectedLang);
-        saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
-      });
-      
-      document.getElementById("languageSelectorMobile").addEventListener("change", (event) => {
-        const selectedLang = event.target.value;
-        loadTranslations(selectedLang);
-        saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
-      });
-      
+      document
+        .getElementById("languageSelectorDesktop")
+        .addEventListener("change", (event) => {
+          const selectedLang = event.target.value;
+          loadTranslations(selectedLang);
+          saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
+        });
+
+      document
+        .getElementById("languageSelectorMobile")
+        .addEventListener("change", (event) => {
+          const selectedLang = event.target.value;
+          loadTranslations(selectedLang);
+          saveLanguageToLocalStorage(selectedLang); // Sauvegarde de la langue sélectionnée
+        });
+
       // Charger la langue par défaut (ou la langue sauvegardée dans localStorage)
       const defaultLang = loadLanguageFromLocalStorage();
       loadTranslations(defaultLang);
       document.getElementById("languageSelectorDesktop").value = defaultLang;
       document.getElementById("languageSelectorMobile").value = defaultLang;
-      
     </script>
 
     <script>
@@ -686,76 +753,82 @@
       });
     </script>
     <script>
-      const API_URL = "https://sandbox.cshdirek.com/api/v1/landing";
+      const API_URL = "https://api.cshdirek.com/api/v1/landing";
 
       // Fill select
       async function fillSelect(
-  endpoint,
-  selectId,
-  translationKey = null,
-  filter = null,
-  defaultValue = null
-) {
-  const select = document.getElementById(selectId);
-  const lang = document.getElementById("languageSelectorDesktop").value;
-  
+        endpoint,
+        selectId,
+        translationKey = null,
+        filter = null,
+        defaultValue = null
+      ) {
+        const select = document.getElementById(selectId);
+        const lang = document.getElementById("languageSelectorDesktop").value;
 
-  let defaultText = "Choisir..."; 
-  
-  if (translationKey) {
-    try {
-      const response = await fetch(translations[lang]);
-      const data = await response.json();
-      defaultText = data[translationKey] || translationKey;
-    } catch (e) {
-      console.error("Erreur de chargement de traduction:", e);
-    }
-  }
+        let defaultText = "Choisir...";
 
-  // Sauvegarde la valeur sélectionnée actuelle
-  const currentValue = select.value;
-  
-  select.innerHTML = `<option value="" disabled selected>${defaultText}</option>`;
-  
-  let url = `${API_URL}/${endpoint}/`;
-  if (filter) {
-    const query = new URLSearchParams(filter).toString();
-    url += `?${query}`;
-  }
-  
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    
-    if (Array.isArray(data.results)) {
-      data.results.forEach((item) => {
-        const opt = document.createElement("option");
-        opt.value = item.id;
-        opt.textContent = item.name;
-        if (item.id === defaultValue) opt.selected = true;
-        select.appendChild(opt);
-      });
-      
-      // Restaure la sélection précédente si elle existe
-      if (currentValue && select.querySelector(`option[value="${currentValue}"]`)) {
-        select.value = currentValue;
+        if (translationKey) {
+          try {
+            const response = await fetch(translations[lang]);
+            const data = await response.json();
+            defaultText = data[translationKey] || translationKey;
+          } catch (e) {
+            console.error("Erreur de chargement de traduction:", e);
+          }
+        }
+
+        // Sauvegarde la valeur sélectionnée actuelle
+        const currentValue = select.value;
+
+        select.innerHTML = `<option value="" disabled selected>${defaultText}</option>`;
+
+        let url = `${API_URL}/${endpoint}/`;
+        if (filter) {
+          const query = new URLSearchParams(filter).toString();
+          url += `?${query}`;
+        }
+
+        try {
+          const res = await fetch(url);
+          const data = await res.json();
+
+          if (Array.isArray(data.results)) {
+            data.results.forEach((item) => {
+              const opt = document.createElement("option");
+              opt.value = item.id;
+              opt.textContent = item.name;
+              if (item.id === defaultValue) opt.selected = true;
+              select.appendChild(opt);
+            });
+
+            // Restaure la sélection précédente si elle existe
+            if (
+              currentValue &&
+              select.querySelector(`option[value="${currentValue}"]`)
+            ) {
+              select.value = currentValue;
+            }
+          }
+        } catch (error) {
+          console.error("Erreur lors du chargement des données:", error);
+        }
       }
-    }
-  } catch (error) {
-    console.error("Erreur lors du chargement des données:", error);
-  }
-}
 
       // Initial load
       // Pour le pays (sans traduction du texte par défaut)
-fillSelect("countries", "country", null, null, "HT");
+      fillSelect("countries", "country", null, null, "HT");
 
-// Pour les autres select (avec traduction)
-fillSelect("cities", "city", "select_city");
-fillSelect("departements", "departement", "select_departement");
-fillSelect("genders", "genre", "select_gender");
-fillSelect("categories", "categorie", "select_category");
-fillSelect("type-entreprises", "type_entreprise", "select_entreprise_type");
+      // Pour les autres select (avec traduction)
+      fillSelect("cities", "city", "select_city");
+      fillSelect("departements", "departement", "select_departement");
+      fillSelect("genders", "genre", "select_gender");
+      fillSelect("categories", "categorie", "select_category");
+      fillSelect(
+        "type-entreprises",
+        "type_entreprise",
+        "select_entreprise_type"
+      );
 
       // city auto load on departement change
       document
@@ -830,7 +903,7 @@ fillSelect("type-entreprises", "type_entreprise", "select_entreprise_type");
 
           try {
             const res = await fetch(
-              "https://sandbox.cshdirek.com/api/v1/landing/register/",
+              "https://api.cshdirek.com/api/v1/landing/register/",
               {
                 method: "POST",
                 body: formData,
@@ -851,21 +924,50 @@ fillSelect("type-entreprises", "type_entreprise", "select_entreprise_type");
                   Nous avons bien reçu votre demande. Notre équipe analysera votre dossier
                   et vous recevrez une réponse sous peu.
                 </p>
-                <a href="https://sandbox.cshdirek.com/admin/cshdirek/login/" class="cmn--btn" data-translate="login">Login</a>
+                <a href="https://api.cshdirek.com/admin/cshdirek/login/" class="cmn--btn" data-translate="login">Login</a>
               `;
 
               form.parentNode.appendChild(successDiv);
             } else {
               const errors = data.errors || data;
-              form.classList.remove("secActive");
+
+              let hasSecondPartError = false;
+              const secondPartFields = [
+                "piece_identite_proprietaire",
+                "preuve_adresse_proprietaire",
+                "photo_face_entreprise",
+                "photo_dos_entreprise",
+                "patente",
+                "autre_document",
+                "preuve_adresse_employe",
+                "piece_identite_employe",
+                "matricule_fiscale_entreprise",
+                "photo_bord_entreprise",
+              ];
+
               for (const field in errors) {
-                const input = document.querySelector(`[name='${field}']`);
+                if (secondPartFields.includes(field)) {
+                  hasSecondPartError = true;
+                  break;
+                }
+              }
+
+              // Activer la bonne section
+              if (hasSecondPartError) {
+                form.classList.add("secActive");
+              } else {
+                form.classList.remove("secActive");
+              }
+
+              // Afficher erreurs
+              for (const field in errors) {
+                const input = document.querySelector(`[name="${field}"]`);
                 if (input) {
                   const errorDiv = input
                     .closest(".input-field")
                     .querySelector(".error-message");
                   if (errorDiv) {
-                    errorDiv.textContent = errors[field].join(", ");
+                    errorDiv.textContent = errors[field][0] || "Erreur";
                   }
                 }
               }

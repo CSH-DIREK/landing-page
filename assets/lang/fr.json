@@ -175,7 +175,7 @@
   "placeholder_electroique" : "Adresse Electronique de l'entreprise",
   "telephone_register" : "Téléphone du Proprietaire",
   "placeholder_telephone" : "Téléphone du Proprietaire",
-  "genre" : "Genre du Proprietaire",
+  "genre_p" : "Genre du Proprietaire",
   "suivant" : "Suivant",
   "docx" : "Document",
   "piece" : "Pièce d'identification du proprietaire",

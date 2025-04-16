@@ -358,7 +358,7 @@
                     <div class="error-message text-danger"></div>
                   </div>
                   <div class="input-field">
-                    <label data-translate="genre">Genre du Proprietaire</label>
+                    <label data-translate="genre_p">Genre du Proprietaire</label>
                     <select name="genre" id="genre" required></select>
                     <div class="error-message text-danger"></div>
                   </div>
@@ -560,69 +560,39 @@
         ht: "./assets/lang/ht.json",
       };
 
-      // Fonction pour charger et appliquer les traductions
       async function loadTranslations(lang) {
         try {
           const response = await fetch(translations[lang]);
-          if (!response.ok) {
-            throw new Error(
-              `Erreur lors du chargement du fichier de langue: ${lang}`
-            );
-          }
+          if (!response.ok) throw new Error(`Erreur de chargement de langue: ${lang}`);
           const data = await response.json();
-
+  
           // 1. Traduire les éléments statiques
           document.querySelectorAll("[data-translate]").forEach((element) => {
             const key = element.getAttribute("data-translate");
-
             if (data[key]) {
-              // Gestion des éléments textuels
-              if (element.textContent) {
-                element.textContent = data[key];
-              }
-
-              // Gestion des inputs
-              if (element.tagName === "INPUT") {
-                if (element.hasAttribute("placeholder")) {
-                  element.setAttribute("placeholder", data[key]);
-                }
-                if (element.type === "submit" || element.type === "button") {
-                  element.value = data[key];
-                }
-              }
-
-              // Gestion des textarea
-              if (
-                element.tagName === "TEXTAREA" &&
-                element.hasAttribute("placeholder")
-              ) {
+              if (element.textContent) element.textContent = data[key];
+              if (element.tagName === "INPUT" && element.hasAttribute("placeholder")) {
                 element.setAttribute("placeholder", data[key]);
               }
-
-              // Gestion des boutons
-              if (element.tagName === "BUTTON") {
-                element.textContent = data[key];
-              }
             }
           });
-
-          // 2. Traduire les options des select (textes par défaut)
-          const selectIds = [
-            "city",
-            "departement",
-            "genre",
-            "categorie",
-            "type_entreprise",
-          ];
-          selectIds.forEach((selectId) => {
-            const select = document.getElementById(selectId);
-            if (select && select.firstElementChild) {
-              const key = `select_${selectId}`;
-              if (data[key]) {
-                select.firstElementChild.textContent = data[key];
-              }
+  
+          // 2. Traduire spécifiquement les placeholders des select
+          const selectsToTranslate = {
+            "categorie": "select_category",
+            "genre": "select_gender", 
+            "type_entreprise": "select_entreprise_type",
+            "city": "select_city",
+            "departement": "select_departement"
+          };
+  
+          for (const [id, translationKey] of Object.entries(selectsToTranslate)) {
+            const select = document.getElementById(id);
+            if (select && select.firstElementChild && data[translationKey]) {
+              select.firstElementChild.textContent = data[translationKey];
             }
-          });
+          }
+  
         } catch (error) {
           console.error(error.message);
         }
